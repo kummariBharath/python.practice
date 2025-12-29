@@ -20,5 +20,13 @@ def add_fun():
         res="hello bro"
     inner_fun2()
     print(res)
-add_fun()        
+add_fun()      
+
+#global variable using global variable also
+my_var = 10
+def change_var():
+    global my_var
+    my_var=1000
+change_var()
+print(my_var)    
   
