@@ -1,4 +1,4 @@
-my_str='depressed guy'
+my_str='Happy New year 2026'
 trimmed_str=my_str.strip('D')
 print(trimmed_str)
 replaced_str=my_str.replace('Depressed','not depresssed')
@@ -9,14 +9,17 @@ print(split_str)
 joind_my_str= "".join(my_str)
 print(joind_my_str)
 #check startwith and endswith of string
-print(my_str.startswith('e'))
-print(my_str.endswith('y'))
+print(my_str.startswith('H'))
+print(my_str.endswith('6'))
 
-print(my_str.find('guy'))
-print(my_str.index('d'))
-print(my_str.count('s'))
+print(my_str.find('new'))
+print(my_str.index('a'))
+print(my_str.count('H'))
 print(my_str.capitalize())
 
 my_string="Happy New YEAR 2026"
 print('new' in my_string)
 print('202' in my_string)
+
+my_str3=my_str.format()
+print(my_str3)
