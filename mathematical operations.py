@@ -45,3 +45,6 @@ print("absolute value:",absolute_value)
 
 power_value=pow(2,5)
 print("power value:",power_value)
+float_22=2026.90
+int_23=44
+print(float_22+int_23)
