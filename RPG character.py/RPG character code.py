@@ -1,9 +1,6 @@
 def create_character(name, strength, intelligence, charisma):
-    name =input("Enter character name: ")
-    strength =int(input("Enter strength (1-4): "))
-    intelligence =int(input("Enter intelligence (1-4):"))
-    charisma =int(input("Enter charisma (1-4): "))
-    return create_character(name, strength, intelligence, charisma)
+    
+
 
     # Name validations
     if not isinstance(name, str):
@@ -12,7 +9,7 @@ def create_character(name, strength, intelligence, charisma):
     if name == "":
         return "The character should have a name"
 
-    if len(name) > 10:
+    if len(name) > 20:
         return "The character name is too long"
 
     if " " in name:
@@ -29,16 +26,32 @@ def create_character(name, strength, intelligence, charisma):
     if strength < 1 or intelligence < 1 or charisma < 1:
         return "All stats should be no less than 1"
 
-    if strength > 4 or intelligence > 4 or charisma > 4:
-        return "All stats should be no more than 4"
+    if strength > 20 or intelligence > 20  or charisma > 20:
+        return "All stats should be no more than 20"
 
-    if strength + intelligence + charisma != 7:
-        return "The character should start with 7 points"
+    if strength + intelligence + charisma > 20:
+        return "The character should start with 20 points"
 
     # Output
     return (
         name + "\n"
-        "STR " + "●" * strength + "○" * (10 - strength) + "\n"
-        "INT " + "●" * intelligence + "○" * (10 - intelligence) + "\n"
-        "CHA " + "●" * charisma + "○" * (10 - charisma)
+        "STR " + "●" * strength + "○" * (20 - strength) + "\n"
+        "INT " + "●" * intelligence + "○" * (20- intelligence) + "\n"
+        "CHA " + "●" * charisma + "○" * (20 - charisma)
     )
+if __name__ == "__main__":
+    try:
+        name = input("Enter character name: ")
+        strength = int(input("Enter strength (1-20): "))
+        intelligence = int(input("Enter intelligence (1-20): "))
+        charisma = int(input("Enter charisma (1-20): "))
+
+        result = create_character(name, strength, intelligence, charisma)
+        print("\nResult:\n")
+        print(result)
+
+    except ValueError:
+        print("All stats should be integers")
+
+
+
