@@ -39,7 +39,7 @@ def create_character(name, strength, intelligence, charisma):
         "INT " + "●" * intelligence + "○" * (20- intelligence) + "\n"
         "CHA " + "●" * charisma + "○" * (20 - charisma)
     )
-if __name__ == "__main__":
+if __name__ == "__main__":    #To control when code runs.
     try:
         name = input("Enter character name: ")
         strength = int(input("Enter strength (1-20): "))
