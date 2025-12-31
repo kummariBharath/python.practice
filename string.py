@@ -23,3 +23,6 @@ print('202' in my_string)
 
 my_str3=my_str.format()
 print(my_str3)
+#str.maketrans(): This method is used to create a table of 1 to 1 character mappings for translation. It is often used with the translate() method which applies that table to a string and return the translated result.
+table = str.maketrans("bharath","indians")
+print(table)
