@@ -16,3 +16,7 @@ print(my_str.find('guy'))
 print(my_str.index('d'))
 print(my_str.count('s'))
 print(my_str.capitalize())
+
+my_string="Happy New YEAR 2026"
+print('new' in my_string)
+print('202' in my_string)
