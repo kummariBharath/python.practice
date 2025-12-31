@@ -18,3 +18,9 @@ print("modulo assignment:",bits)
 bits2=44
 bits2**=3
 print("power assignment:",bits2)
+#oct() function converts an integer to an octal string prefixed with "0o"
+num = 2026
+print(oct(num))
+#hex() function converts an integer to a lowercase hexadecimal string prefixed with "0x"
+num1 = 2027
+print(hex(num1))

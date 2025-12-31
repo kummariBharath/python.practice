@@ -27,3 +27,5 @@ else:
 print(age or is_citizen)
 if is_citizen or age >=18: # tf=true
     print('eligible to vote')
+
+    
