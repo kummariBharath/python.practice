@@ -38,6 +38,11 @@ print(a3)
 print(a22)
 
 mylist4=[1,2,3,4,5,6]
-b=[i*4 for i in mylist4]
+b=[i*4 for i in mylist4]  #multiplying each element by 4
 print(b)
 
+developer_names=["sachin","rahul","anil","sunil"]
+developer_names[0]="bharath"  #modifying list element
+print(developer_names)
+sorted_list=sorted(developer_names)
+print(sorted_list)
