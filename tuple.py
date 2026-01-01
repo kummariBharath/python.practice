@@ -28,5 +28,11 @@ k=imp_person_life.count('bharath')
 print(imp_person_life)
 for i in imp_person_life: #printing elements one by one
     print(i)
-
+#sorted() function by passing tuple,key attribute3
+print(sorted(imp_person_life,key=len))
+#sorted() and reverse()
+print((sorted(imp_person_life,reverse=True)))
+tuple_2=('bell','rat','apple','pmograte')
+print(sorted(tuple_2))
+print(sorted(tuple_2,key=len))
     
