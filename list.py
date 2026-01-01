@@ -16,7 +16,7 @@ print(mylist)
 item=mylist.pop()
 print(item)
 print(mylist)
-#remove specific element #
+#remove specific element by value
 item=mylist.remove("banana")
 print(mylist)
 item=mylist.clear()
@@ -32,7 +32,6 @@ a1=list3[1:]
 a2=list3[::1]
 a22=list3[::3]      # :: is useful for gap between numbers
 a3=list3[::2]
-
 print(a1)
 print(a2)
 print(a3)
@@ -42,7 +41,3 @@ mylist4=[1,2,3,4,5,6]
 b=[i*4 for i in mylist4]
 print(b)
 
-import sys 
-print(sys.getsizeof("banana"),"bytes")
-
-print(dir(sys))
