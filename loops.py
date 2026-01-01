@@ -30,8 +30,13 @@ while guess!=guess_number:
     else:
         print("your guessed it right") 
 
-deveolpers=["bharath","shivani","navya","sumit"]
+deveolpers=("bharath","shivani","navya","sumit")
 for dev in deveolpers:
      if dev=="bharath":
          print(f'{dev} is selected')
          break
+friends=["navya","shivani","sumit","vineeth"]
+for friend in friends:
+    if len(friend)<6:
+        print(f'{friend} is not selected')
+        continue     
