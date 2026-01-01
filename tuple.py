@@ -23,6 +23,8 @@ k= mytuple.__sizeof__()
 k=mytuple.__getattribute__("index")("BOSTON")
 print(k)
 #count()
-k=tuple('bharath','navya','shivani','sumit','bharath')
-k.count('bharath')
+imp_person_life=('bharath','navya','shivani','sumit','bharath')
+k=imp_person_life.count('bharath')
 print(k)
+'navya'in imp_person_life
+'sumit'in imp_person_life
