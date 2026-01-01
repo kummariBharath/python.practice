@@ -65,3 +65,6 @@ numbers=[1,2,3,4,[10,20,30]]
 odd_numbers=[111,112,113]
 numbers.extend(odd_numbers) # add elements to list from another list
 print(numbers)
+#insert() method
+numbers.insert(4,999)
+print(numbers)
