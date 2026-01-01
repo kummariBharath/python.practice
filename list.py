@@ -48,3 +48,9 @@ sorted_list=sorted(developer_names)
 print(sorted_list)
 names_list=["bharath","shivani","navya",["vineeth","mabusubhan","sumit"]]
 print(names_list[3][2]) #acccessing the nested _list
+phislophers=["plato","aristotle","socrates","descartes"]
+great,superior,good,bad=phislophers
+print(great)
+print(superior)
+print(good)
+print(bad)
