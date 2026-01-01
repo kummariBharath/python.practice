@@ -46,3 +46,5 @@ developer_names[0]="bharath"  #modifying list element
 print(developer_names)
 sorted_list=sorted(developer_names)
 print(sorted_list)
+names_list=["bharath","shivani","navya",["vineeth","mabusubhan","sumit"]]
+print(names_list[3][2]) #acccessing the nested _list
