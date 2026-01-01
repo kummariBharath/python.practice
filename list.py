@@ -68,3 +68,7 @@ print(numbers)
 #insert() method
 numbers.insert(4,999)
 print(numbers)
+#pop() mesthod with index
+numbers.pop(3)
+numbers.pop(4)
+print(numbers)
