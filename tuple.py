@@ -25,9 +25,8 @@ print(k)
 #count()
 imp_person_life=('bharath','navya','shivani','sumit','bharath')
 k=imp_person_life.count('bharath')
-imp_person_life.index('shivani',1)
 print(imp_person_life)
 for i in imp_person_life: #printing elements one by one
     print(i)
-    
+
     
