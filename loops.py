@@ -39,4 +39,7 @@ friends=["navya","shivani","sumit","vineeth"]
 for friend in friends:
     if len(friend)==5:
         print(f'{friend} is don') #navya aand sumit is 5 letters
-        continue     
+        continue
+  #range function
+for number in range(1,11,2):
+        print(number)  #1 to 10 with step of 2
