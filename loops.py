@@ -28,4 +28,10 @@ while guess!=guess_number:
     elif guess>guess_number:
         print("too high")
     else:
-        print("your guessed it right")    
+        print("your guessed it right") 
+
+deveolpers=["bharath","shivani","navya","sumit"]
+for dev in deveolpers:
+     if dev=="bharath":
+         print(f'{dev} is selected')
+         break
