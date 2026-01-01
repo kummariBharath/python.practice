@@ -37,6 +37,6 @@ for dev in deveolpers:
          break
 friends=["navya","shivani","sumit","vineeth"]
 for friend in friends:
-    if len(friend)<6:
-        print(f'{friend} is not selected')
+    if len(friend)==5:
+        print(f'{friend} is don') #navya aand sumit is 5 letters
         continue     
