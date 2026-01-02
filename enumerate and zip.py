@@ -8,3 +8,9 @@ languages=["Python","Java","C++"]
 levels=["Beginner","Intermediate","Advanced"]
 for lang,level in zip(languages,levels):
     print(f"{lang} is for {level} level")
+
+students=["John","Emma","Sophia"]
+scores=[85,92,78]
+rankings=[1,2,3] 
+for student,score,rank in zip(students,scores,rankings):
+    print(f"{student} scored {score} and is ranked with {rank}")  
