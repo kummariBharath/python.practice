@@ -44,4 +44,5 @@ for friend in friends:
 for number in range(1,11,2):
         print(number)  #1 to 10 with step of 2
 for num in range(1,2000,100):
-    print(num)  #1 to 2000 with step of 100        
+    print(num)  
+        #1 to 2000 with step of 100        
