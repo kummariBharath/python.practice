@@ -20,3 +20,7 @@ print(transposed)
 avengers=["ironman","thor","hulk","captain america","black widow","hawkeye"]
 doomsday_avengers=list(filter(lambda x: "a" in x,avengers))
 print(doomsday_avengers)
+def is_long_word(word):
+    return len(word)>6
+long_words=list(filter(is_long_word,avengers))
+print(long_words)
