@@ -30,3 +30,7 @@ def is_fahrenheit(celius):
     return (celius*9/5)+32
 fahrenheit_temperatures=list(map(is_fahrenheit,celius_temperatures))
 print(fahrenheit_temperatures)
+#sum() function
+numbers=[100,200,3000,467,384]
+total=sum(numbers)
+print(numbers)
