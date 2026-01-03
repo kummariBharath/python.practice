@@ -35,6 +35,6 @@ fahrenheit_temperatures=list(map(is_fahrenheit,celius_temperatures))
 print(fahrenheit_temperatures)
 
 #sum() function
-numbers=[100,200,3000,467,384]
-total=sum(numbers)
+numbers=[100,200,300,400,500]
+total=sum(numbers,start=200) #start parameter is optional and added to the total
 print(total)
