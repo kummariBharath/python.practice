@@ -18,7 +18,7 @@ transposed=[[row[i] for row in matrix] for i in range(3)]
 print(transposed)
 #filter()
 avengers=["ironman","thor","hulk","captain america","black widow","hawkeye"]
-doomsday_avengers=list(filter(lambda x: "a" in x,avengers))
+doomsday_avengers=list(filter(lambda x: "m" in x,avengers))
 print(doomsday_avengers)
 def is_long_word(word):
     return len(word)>6
