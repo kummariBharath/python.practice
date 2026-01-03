@@ -16,3 +16,7 @@ print(odd_numbers)
 matrix=[[1,2,3],[4,5,6],[7,8,9]]
 transposed=[[row[i] for row in matrix] for i in range(3)]
 print(transposed)
+#filter()
+avengers=["ironman","thor","hulk","captain america","black widow","hawkeye"]
+doomsday_avengers=list(filter(lambda x: "a" in x,avengers))
+print(doomsday_avengers)c
