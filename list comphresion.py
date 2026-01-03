@@ -33,4 +33,4 @@ print(fahrenheit_temperatures)
 #sum() function
 numbers=[100,200,3000,467,384]
 total=sum(numbers)
-print(numbers)
+print(total)
