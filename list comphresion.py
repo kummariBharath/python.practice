@@ -8,3 +8,6 @@ print(result)
 #creating a dictionary using list comprehension
 squares={x:x**2 for x in range(1,10)}
 print(squares)
+#creating a set using list comprehension
+odd_numbers={x for x in range(1,20) if x%2!=0}
+print(odd_numbers)
