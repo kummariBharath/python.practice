@@ -19,4 +19,4 @@ print(transposed)
 #filter()
 avengers=["ironman","thor","hulk","captain america","black widow","hawkeye"]
 doomsday_avengers=list(filter(lambda x: "a" in x,avengers))
-print(doomsday_avengers)c
+print(doomsday_avengers)
