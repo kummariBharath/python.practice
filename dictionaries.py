@@ -13,3 +13,6 @@ print(my_dict)
 my_dict['age']=21  #modifying 
 my_dict.update({'city':'bangalore'},domain='analyst')
 print(my_dict)
+#deletion
+del my_dict['city']
+print(my_dict)
