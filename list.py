@@ -72,3 +72,10 @@ print(numbers)
 numbers.pop(3)
 numbers.pop(4)
 print(numbers)
+
+
+def is_long_word(words):
+    return [word for word in words if len(word)>4]
+developers=["hello","world","in","a","frame"]
+is_long_word(developers)
+print(is_long_word(developers))
