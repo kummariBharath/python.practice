@@ -19,3 +19,7 @@ for student,score,rank in zip(students,scores,rankings):
 products={'laptop':100000,'phone':20000,'tablet':15000,'headphones':5000}
 for product,price in products.items():
     print(f'The price of {product} is {price}')
+ #applying discount using loop
+for product,price in products.items():
+    discounted_price=price*0.9
+    print(f'The discounted price of {product} is {discounted_price}')
