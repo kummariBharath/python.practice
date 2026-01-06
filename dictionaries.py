@@ -29,5 +29,5 @@ for product,price in products.items():
 #enumerte function
 for product in enumerate(products):
     print(product)
-for index,product in enumerate(products.items()):
-    print(index,product)    
+for index,product,price in enumerate(products.items()):
+    print(index,product,price)    
