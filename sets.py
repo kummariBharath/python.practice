@@ -24,4 +24,5 @@ print(my_set^my_set2)
 
 #above opertor can be replaced by assignemet opertors
 # |= &= -= ^=
-print(my_set1-=my_set2) 
+my_set1-= my_set2 #
+print(my_set1) 
