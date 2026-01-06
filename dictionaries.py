@@ -26,3 +26,6 @@ for product,price in products.items():
     discounted_price=price*0.9
     print(f'The discounted price of {product} is {discounted_price}')
    
+#enumerte function
+for product in enumerate(products):
+    print(product)
