@@ -10,3 +10,5 @@ my_set1={10,20,30,40,50}
 my_set2={20,30,40}
 print(my_set2.issubset(my_set1))
 print(my_set1.issuperset(my_set2))
+#checking comman elements in both sets using .isdisjoint()
+print(my_set1.isdisjoint(my_set2))
