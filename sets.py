@@ -12,3 +12,16 @@ print(my_set2.issubset(my_set1))
 print(my_set1.issuperset(my_set2))
 #checking comman elements in both sets using .isdisjoint()
 print(my_set1.isdisjoint(my_set2))
+
+#union operator()
+print(my_set1|my_set2)
+#intersection operator()
+print(my_set1&my_set2)
+#difference opertor
+print(my_set1 - my_set2)
+#symmmetric differnce returns a new set of elements where elements are unique 
+print(my_set^my_set2)
+
+#above opertor can be replaced by assignemet opertors
+# |= &= -= ^=
+print(my_set1-=my_set2) 
