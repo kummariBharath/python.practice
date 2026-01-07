@@ -23,3 +23,9 @@ print(tanh_value)
 #importing all functions from module
 from math import *
 print(pow(5,3))
+
+import datetime
+birthday = datetime.date(2005,26,11)
+print(birthday.day)
+print(birthday.month)
+print(birthday.year)
