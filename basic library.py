@@ -3,4 +3,11 @@
 import math
 math.sqrt(36)
 #giving a alias for module name
+import math as m
+fun_1=m.sqrt(999)
+print(fun_1)
 
+#importing functions at a time
+from math import radians,sin,cos,tan
+degrees_1=40
+radians=radians(degress)
