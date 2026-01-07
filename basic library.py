@@ -13,5 +13,7 @@ degrees_1=40
 radians=radians(degrees_1)
 sin_value=sin(radians)
 cos_value=cos(radians)
+tan_value=tan(radians)
 print(sin_value)
 print(cos_value)
+print(tan_value)
