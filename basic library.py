@@ -25,7 +25,13 @@ from math import *
 print(pow(5,3))
 
 import datetime
-birthday = datetime.date(2005,26,11)
+birthday = datetime.date(2005,11,26)
 print(birthday.day)
 print(birthday.month)
 print(birthday.year)
+
+from statistics import*
+mean_value=[23,4,45,5,66,66]
+print(mean(mean_value))
+print(stdev(mean_value))
+print(variance(mean_value))
