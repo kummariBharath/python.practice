@@ -13,4 +13,5 @@ degrees_1=40
 radians=radians(degrees_1)
 sin_value=sin(radians)
 cos_value=cos(radians)
-
+print(sin_value)
+print(cos_value)
