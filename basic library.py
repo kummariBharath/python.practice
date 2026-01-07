@@ -10,4 +10,7 @@ print(fun_1)
 #importing functions at a time
 from math import radians,sin,cos,tan
 degrees_1=40
-radians=radians(degress)
+radians=radians(degrees_1)
+sin_value=sin(radians)
+cos_value=cos(radians)
+
