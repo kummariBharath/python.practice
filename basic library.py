@@ -8,12 +8,15 @@ fun_1=m.sqrt(999)
 print(fun_1)
 
 #importing functions at a time
-from math import radians,sin,cos,tan
+from math import radians,sin,cos,tan,tanh
 degrees_1=40
 radians=radians(degrees_1)
 sin_value=sin(radians)
 cos_value=cos(radians)
 tan_value=tan(radians)
+tanh_value=tanh(radians)
+
 print(sin_value)
 print(cos_value)
 print(tan_value)
+print(tanh_value)
