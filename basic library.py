@@ -20,3 +20,6 @@ print(sin_value)
 print(cos_value)
 print(tan_value)
 print(tanh_value)
+#importing all functions from module
+from math import *
+print(pow(5,3))
