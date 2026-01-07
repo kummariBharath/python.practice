@@ -51,3 +51,4 @@ def validate(data):
         return False
     print('Valid format.')
     return True
+validate(medical_records)
