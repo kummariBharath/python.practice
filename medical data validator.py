@@ -48,7 +48,7 @@ def validate(data):
             is_invalid = True
         if set(dictionary.keys())!=key_set:
             print(f'Invalid format: {dictionary} at position {index}  has missing and/or invalid keys')  
-        is_invalid=True 
+            is_invalid=True 
             
     if is_invalid:
         return False
