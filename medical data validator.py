@@ -1,3 +1,4 @@
+import re
 medical_records = [
     {
         'patient_id': 'P1001',
@@ -34,7 +35,9 @@ medical_records = [
 ]
 def find_invalid_records(patient_id, age, gender, diagnosis, medications, last_visit_id):
     constraints = {
-        'patient_id': isinstance(patient_id, str) and re.search('p', patient_id)
+        'patient_id': isinstance(patient_id, str) and re.search('p', patient_id,re.IGNORECASE)
+# re.IGNORECASE as the third argument to your re.search call. This will make your regex search case insensitive.
+#After that, you'll see None replaced by the match object <re.Match object; span=(0, 1), match='P'>, where match indicates the match 
     }
 
 
