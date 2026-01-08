@@ -39,7 +39,9 @@ def find_invalid_records(patient_id, age, gender, diagnosis, medications, last_v
 # re.IGNORECASE as the third argument to your re.search call. This will make your regex search case insensitive.
 #After that, you'll see None replaced by the match object <re.Match object; span=(0, 1), match='P'>, where match indicates the match
 #After the letter p, patient_id should have a series of numbers. So, modify your regex pattern to have the character p followed by the special sequence \d.
-    } 
+#append a + quantifier to your regex pattern to match one or more digits.
+
+   } 
 
 def validate(data):
     is_sequence = isinstance(data, (list, tuple))
