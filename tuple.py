@@ -35,4 +35,3 @@ print((sorted(imp_person_life,reverse=True)))
 tuple_2=('bell','rat','apple','pmograte')
 print(sorted(tuple_2))
 print(sorted(tuple_2,key=len))
-    
