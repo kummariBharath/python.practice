@@ -9,7 +9,9 @@ def multiply(a,b):
     return a * b
 print(multiply(177,199))
 
+import pdb
 def factorial(n):
+    pdb.set_trace()
     if n ==0 or n==1:
         return 1
     else:
