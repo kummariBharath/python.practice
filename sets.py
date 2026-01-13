@@ -26,3 +26,8 @@ print(my_set^my_set2)
 # |= &= -= ^=
 my_set1-= my_set2 #
 print(my_set1) 
+
+def set(a,b):
+   if (a>b):
+    sum(a+b)
+    return  "addition"
