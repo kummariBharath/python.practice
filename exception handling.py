@@ -11,5 +11,12 @@ try:
     result=10/num
 except ValueError:
     print('that was not a valid number')
-except ZeroDivisionError:
-    print("can't divide by zero")           
+except ZeroDivisionError as e: #also alias e for zerodivisionerror
+    print(f"error:{e}")           
+
+#mutiple errors finding in the except block
+try:
+    num=int(input("enter a number :")) 
+    result=10/num  
+except (ValueError,ZeroDivisionError) as e:
+    print(f"error :{e}")
