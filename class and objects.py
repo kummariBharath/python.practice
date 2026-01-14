@@ -2,12 +2,12 @@
 class Bharath:
     def __init__(self, name, days):
         self.name = name
-        self.age = days
+        self.days = days
     def learn(self):
-        print(f"{self.name.upper()} and learns python in {self.days}")
+        print(f"{self.name} and learns python in {self.days}")
 #objects creation and calling from classes
 skill_1=Bharath("learns sql",30)
-skill_2=learn("learns DSA",25)   
+skill_2=Bharath("learns DSA",25)   
 
 #calling the methods
 skill_1.learn()
