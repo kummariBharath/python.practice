@@ -51,3 +51,14 @@ try:
     result=calculate_square_root(-5)
 except AssertionError as e:
     print(f"Asseration failed:{e}")    
+
+#else and finally: These blocks extend try...except. If no exception occurs, the else block runs. The finally block always runs regardless of errors.
+
+try:
+  result = 100 / 4
+except ZeroDivisionError:
+  print('You cannot divide by zero!') # This will not run
+else:
+  print(f'Result is {result}') # Result is 25.0
+finally:
+  print('Execution complete!') # Execution complete!
