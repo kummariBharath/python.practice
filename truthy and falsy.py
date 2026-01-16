@@ -16,3 +16,38 @@ else:
 print(bool([])) #falsy
 print(bool([1,23,45])) #truthy
 print(bool(0)) #falsy
+
+a = 10  # binary: 1010
+b = 4   # binary: 0100
+
+# BITWISE OPERATORS:
+
+# & (AND) - Returns 1 if both bits are 1
+# a & b = 1010 & 0100 = 0000 = 0
+print(a & b)  # Output: 0
+# Use: Checking if specific bits are set, masking bits
+
+# | (OR) - Returns 1 if at least one bit is 1
+# a | b = 1010 | 0100 = 1110 = 14
+print(a | b)  # Output: 14
+# Use: Setting specific bits, combining flags
+
+# ~ (NOT) - Inverts all bits (0→1, 1→0)
+# ~a = ~1010 = ...0101 = -11 (two's complement)
+print(~a)  # Output: -11
+# Use: Inverting all bits
+
+# ^ (XOR) - Returns 1 if bits are different
+# a ^ b = 1010 ^ 0100 = 1110 = 14
+print(a ^ b)  # Output: 14
+# Use: Toggling bits, detecting differences
+
+# >> (Right Shift) - Shifts bits right by n positions (divides by 2^n)
+# a >> 2 = 1010 >> 2 = 0010 = 2 (10 / 4)
+print(a >> 2)  # Output: 2
+# Use: Efficient division by powers of 2
+
+# << (Left Shift) - Shifts bits left by n positions (multiplies by 2^n)
+# a << 2 = 1010 << 2 = 101000 = 40 (10 * 4)
+print(a << 2)  # Output: 40
+# Use: Efficient multiplication by powers of 2
