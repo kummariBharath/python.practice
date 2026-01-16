@@ -12,6 +12,7 @@ class Cart:
    def display(self):
         for item in self.dict:
              print(item)  
+   
    def __len__(self):
         return len(self.dict)
 
