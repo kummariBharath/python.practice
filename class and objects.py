@@ -47,3 +47,8 @@ class car:
     def service_recommendation(self,current_year):
         age=current_year-self.year
         if age<3:
+            print(f"Car {self.brand} {self.model} requires service.")
+        elif 3<=age<7:
+            print(f"Car {self.brand} {self.model} requires major service.")
+        else:
+            print(f"Car {self.brand} {self.model} requires comprehensive service.")
