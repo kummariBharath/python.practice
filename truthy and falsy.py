@@ -43,7 +43,11 @@ print(a ^ b)  # Output: 14
 # Use: Toggling bits, detecting differences
 
 # >> (Right Shift) - Shifts bits right by n positions (divides by 2^n)
-# a >> 2 = 1010 >> 2 = 0010 = 2 (10 / 4)
+# a >> 2 = 1010 >> 2 = 0010 = 2 (10 / 4) 
+#Before:  1 0 1 0
+#Shift 1:   1 0 1
+#Shift 2:     1 0
+
 print(a >> 2)  # Output: 2
 # Use: Efficient division by powers of 2
 
