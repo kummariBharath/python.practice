@@ -21,12 +21,16 @@ class Cart:
    def insert(self,key,value):
         self.dict[key]=value
 
-   def  delete(self,key):
+   def __getattribute__(self, key):
+        dict_obj = object.__getattribute__(self, 'dict')
+        if key in dict_obj:
+            return dict_obj[key]
+        return object.__getattribute__(self, key)
+
+
+   def delete(self,key):
         if key in self.dict:
              del self.dict[key]    
-   def display(self):
-        for key, value in self.dict.items():
-             print(f"{key}: {value}")
 
 cart=Cart() ##creating object of Cart class
 cart.insert("apple",3)
@@ -38,3 +42,4 @@ print(cart.__contains__("banana"))
 cart.delete("orange")
 cart.insert("pineapple",5)
 print(cart.__len__())
+print(cart.__getattribute__("grape"))
