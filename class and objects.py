@@ -55,6 +55,20 @@ class car:
     def car_restriction(self,current_year,pollution):
         age=current_year - self.year
         if age>10 and pollution=="high":
-            print(f"car {self.brand} {self.model} is resticated on the roads")
+            print(f"Car {self.brand} {self.model} is resticated on the roads")
         else:
-            print(f"car {self.brand} {self.model} is allowed on every roads")
+            print(f"Car {self.brand} {self.model} is allowed on every roads")
+
+car_1=car("alto","maruti",2018)
+car_2=car("polo","volkswagen",2022)
+car_3=car("swift","maruti",2015)
+car_4=car("creta","hyundai",2020)
+car_1.car_info()
+car_1.car_age(2026)
+car_2.car_info()
+car_2.car_age(2026)
+#apply methods
+car_3.service_recommendation(2026)
+car_4.service_recommendation(2026)
+car_3.car_restriction(2026,"high")
+car_4.car_restriction(2026,"low")
