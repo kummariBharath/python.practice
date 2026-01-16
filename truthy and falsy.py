@@ -1,6 +1,9 @@
 #truty values are 0,[1],(9),{1;2},True,"hello"
 #falsy values are 0.0,[],(),{},False,""
 
+from ast import In
+
+
 num1=10
 num2=20
 if num1 % 2:     #here 10%2==0 so 0 means false --else block will execute
@@ -55,3 +58,17 @@ print(a >> 2)  # Output: 2
 # a << 2 = 1010 << 2 = 101000 = 40 (10 * 4)
 print(a << 2)  # Output: 40
 # Use: Efficient multiplication by powers of 2
+
+
+#precedence
+#Precedence and Associativity of Operators
+#Python, Operator precedence and associativity determine the priorities of the operator
+expr = 10 + 20 * 30
+print(expr)      # * has higher precedence than +, so multiplication is performed first.
+name = "Alex"
+age = 0
+
+if name == "Alex" or name == "John" and age >= 2:
+    print("Hello! Welcome.")  #and has higher precedence than or, so the age check is performed first.
+else:
+    print("Good Bye!!")
