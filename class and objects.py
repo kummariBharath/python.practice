@@ -52,3 +52,9 @@ class car:
             print(f"Car {self.brand} {self.model} requires major service.")
         else:
             print(f"Car {self.brand} {self.model} requires comprehensive service.")
+    def car_restriction(self,current_year,pollution):
+        age=current_year - self.year
+        if age>10 and pollution=="high":
+            print(f"car {self.brand} {self.model} is resticated on the roads")
+        else:
+            print(f"car {self.brand} {self.model} is allowed on every roads")
