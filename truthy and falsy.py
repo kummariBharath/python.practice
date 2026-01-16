@@ -12,4 +12,7 @@ if num2 % 3:      #here 20%3==2 so 2 means true --if block will execute
 else:
     print("num2 is falsy")    
 
-    
+#bool() function is used to check whether the value is truthy or falsy   
+print(bool([])) #falsy
+print(bool([1,23,45])) #truthy
+print(bool(0)) #falsy
