@@ -11,3 +11,5 @@ if num2 % 3:      #here 20%3==2 so 2 means true --if block will execute
     print("num2 is truthy")
 else:
     print("num2 is falsy")    
+
+    
