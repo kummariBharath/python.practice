@@ -33,3 +33,5 @@ print(student_2.name)
 print(student_2.rollnumber)
 student_2.admitted()
 
+
+
