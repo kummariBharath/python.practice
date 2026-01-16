@@ -33,5 +33,17 @@ print(student_2.name)
 print(student_2.rollnumber)
 student_2.admitted()
 
+class car:
+    def __init__(self,brand,model,year):
+        self.brand=brand
+        self.model=model
+        self.year=year
 
-
+    def car_info(self):
+        print(f"Brand: {self.brand}, Model: {self.model}, Year: {self.year}")  
+    def car_age(self,current_year):
+        age=current_year - self.year
+        print(f"the car is {age} years old")
+    def service_recommendation(self,current_year):
+        age=current_year-self.year
+        if age<3:
