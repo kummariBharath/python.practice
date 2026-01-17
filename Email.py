@@ -42,3 +42,7 @@ class Inbox:
         if not self.emails:
             print("Your inbox is empty.\n")
             return
+        
+        print("\nYour Emails:")
+        for i, email in enumerate(self.emails, start=1):
+            print(f"{i}. {email}")
