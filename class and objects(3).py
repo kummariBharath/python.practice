@@ -26,3 +26,19 @@ for attr in dir(person):
 # Output
 # age: 30
 # name: John Doe
+
+#set attribute using setattr() function
+class laptop:
+    pass
+#giving info from outside
+settings = {
+    'brand': 'vivobook',
+    'model': '16x',
+    'year': 2024
+}
+laptop_1=laptop()
+#setting attributes dynamically
+for attr,value in settings.items():
+    setattr(laptop_1,attr,value)
+
+print(laptop_1.__getattribute__('brand'))  # Output: vivobook
