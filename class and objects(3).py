@@ -57,8 +57,10 @@ smartphone_2 = smartphone("Apple", "iPhone 13",999)
 required_attrs=["brand","model","price","storage"]
 for attr in required_attrs:
     if hasattr(smartphone_1,attr):
-        print(f"{attr}:getattr(smartphone_1,attr)")
+        print(f"{attr}:{getattr(smartphone_1,attr)}")
     else:
         print(f"{attr} not found") 
     if hasattr(smartphone_2,attr):
-        print(f"{attr}:getattr(smartphone_2,attr)")              
+        print(f"{attr}:{getattr(smartphone_2,attr)}")  
+    else:
+        print(f"{attr} not found")               
