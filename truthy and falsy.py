@@ -72,3 +72,12 @@ if name == "Alex" or name == "John" and age >= 2:
     print("Hello! Welcome.")  #and has higher precedence than or, so the age check is performed first.
 else:
     print("Good Bye!!")
+
+
+
+def prob(a,b,flag):
+    if (a>=0 and a<0) or (a<0 and b>=0) and flag ==True:
+        return "True"
+    else:
+        return "false"
+print(prob(-1,2,True))        
