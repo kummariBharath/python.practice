@@ -63,4 +63,22 @@ for attr in required_attrs:
     if hasattr(smartphone_2,attr):
         print(f"{attr}:{getattr(smartphone_2,attr)}")  
     else:
-        print(f"{attr} not found")               
+        print(f"{attr} not found")  
+
+# delattr() function to delete the attribute
+class Login:
+    def __init__(self,user_id,password,encrypted_code,pin_number):
+        self.user_id=user_id
+        self.password=password 
+        self.encrypted_code=encrypted_code #sensitive
+        self.pin_number=pin_number #sensitive
+admin_1=Login("243748","sumanrayka","hy4djx3","890100")
+admin_2=Login("987654","bharath123","kdhf783","456789")  
+to_delete=["encrypted_code","pin_number"]
+for attr in to_delete:
+   if  hasattr(admin_1,attr):
+      delattr(admin_1,attr) 
+                           
+   else:
+        print(f"{attr} not found in admin_1")   
+print(hasattr(admin_1,"encrypted_code"))       
