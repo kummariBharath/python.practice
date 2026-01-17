@@ -43,3 +43,22 @@ for attr,value in settings.items():
 
 print(laptop_1.__getattribute__('brand')) #prints the brand attribute using  __getattribute__()
 print(laptop_1.model) #printing the model attribute directly
+
+#hasattr() function to check if attribute exists
+
+class smartphone:
+    def __init__(self, brand, model, price):
+        self.brand = brand
+        self.model = model
+        self.price = price
+
+smartphone_1 = smartphone("Samsung", "Galaxy S21", 799)
+smartphone_2 = smartphone("Apple", "iPhone 13",999)
+required_attrs=["brand","model","price","storage"]
+for attr in required_attrs:
+    if hasattr(smartphone_1,attr):
+        print(f"{attr}:getattr(smartphone_1,attr)")
+    else:
+        print(f"{attr} not found") 
+    if hasattr(smartphone_2,attr):
+        print(f"{attr}:getattr(smartphone_2,attr)")              
