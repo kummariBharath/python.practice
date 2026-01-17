@@ -75,10 +75,31 @@ class Login:
 admin_1=Login("243748","sumanrayka","hy4djx3","890100")
 admin_2=Login("987654","bharath123","kdhf783","456789")  
 to_delete=["encrypted_code","pin_number"]
-for attr in to_delete:
+for attr in to_delete:      #deleteing sensitive attributes
    if  hasattr(admin_1,attr):
       delattr(admin_1,attr) 
-                           
+      print(f"{attr} deleted from admin_1")                
    else:
-        print(f"{attr} not found in admin_1")   
-print(hasattr(admin_1,"encrypted_code"))       
+        print(f"{attr} not found in admin_1")
+# print remaining atttributes using dir() for admin_1
+print("Remaining attributes in admin_1:")
+for attr in dir(admin_1):
+    if not attr.startswith('__') and not callable(getattr(admin_1, attr)):
+        print(f'{attr}: {getattr(admin_1, attr)}')
+    else:
+        continue
+# deleteing sensitive attributes from admin_2    
+for attr in to_delete: 
+    if  hasattr(admin_2,attr):
+        delattr(admin_2,attr) 
+        print(f"{attr} deleted from admin_2")                
+    else:
+          print(f"{attr} not found in admin_2")  
+# print remaining atttributes using dir() for admin_2
+print("Remaining attributes in admin_2:")
+for attr in dir(admin_2):
+    if not attr.startswith('__') and not callable(getattr(admin_2, attr)):
+        print(f'{attr}: {getattr(admin_2, attr)}')
+    else:
+        continue   
+print("Good Bye!!")              
