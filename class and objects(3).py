@@ -42,4 +42,4 @@ for attr,value in settings.items():
     setattr(laptop_1,attr,value)
 
 print(laptop_1.__getattribute__('brand')) #prints the brand attribute using  __getattribute__()
-print(laptop_1.model)
+print(laptop_1.model) #printing the model attribute directly
