@@ -96,17 +96,13 @@ def main():
     
     tory.send_email(ramy, 'Hello', 'Hi Ramy, just saying hello!')
     ramy.send_email(tory, 'Re: Hello', 'Hi Tory, hope you are fine.')
+    ramy.check_inbox()
+    ramy.read_email(1)
+    ramy.delete_email(1)
+    ramy.check_inbox()
     
     
 if __name__ == '__main__':
     main()
 
-                                                 #Here's how strftime() works with format codes:
-
-                                                    #Example Code
-                                                #now = datetime.datetime.now()
-                                                #print(now.strftime("%Y-%m-%d"))  # Output: 2024-03-15 (year-month-day with - separator)
-                                             #The format codes like %Y (year), %m (month), %d (day) tell strftime() what to include, and you can add separators like - between them.
-
-                                         #At the bottom of your code, create a variable called current_time and assign it datetime.datetime.now(). Then use strftime() to print the time in hours:minutes:seconds format using : as the separator
-                                       #Use these format codes: %H for hours (24-hour format), %M for minutes, and %S for seconds.
+                                               
