@@ -75,16 +75,8 @@ class User:
     def check_inbox(self):
         print(f"\n{self.name}'s Inbox:")
         self.inbox.list_emails()
-                                                                                                    #Here's how strftime() works with format codes:
-
-                                                    #Example Code
-                                                #now = datetime.datetime.now()
-                                                #print(now.strftime("%Y-%m-%d"))  # Output: 2024-03-15 (year-month-day with - separator)
-                                             #The format codes like %Y (year), %m (month), %d (day) tell strftime() what to include, and you can add separators like - between them.
-
-                                         #At the bottom of your code, create a variable called current_time and assign it datetime.datetime.now(). Then use strftime() to print the time in hours:minutes:seconds format using : as the separator
-                                       #Use these format codes: %H for hours (24-hour format), %M for minutes, and %S for secon
-    def read_email(self, index):
+                                                                                                    
+    def read_email(self,index):                                          
         self.inbox.read_email(index)
 
     def delete_email(self, index):
