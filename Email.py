@@ -1,3 +1,4 @@
+import datetime
 
 class Email:
     def __init__(self, sender, receiver, subject, body):
@@ -5,6 +6,7 @@ class Email:
         self.receiver = receiver
         self.subject = subject
         self.body = body
+        self.timestamp = datetime.datetime.now()
         self.read = False
 
     def mark_as_read(self):
@@ -16,12 +18,50 @@ class Email:
         print(f'From: {self.sender.name}')
         print(f'To: {self.receiver.name}')
         print(f'Subject: {self.subject}')
+        print(f"Received: {self.timestamp.strftime('%Y-%m-%d %H:%M')}")
         print(f'Body: {self.body}')
         print('------------\n')
 
     def __str__(self):
-        status = "Read" if self.read else "Unread"
-        return f"Email from {self.sender.name} to {self.receiver.name} - {status}"
+        status = 'Read' if self.read else 'Unread'
+        return f"[{status}] From: {self.sender.name} | Subject: {self.subject} | Time: {self.timestamp.strftime('%Y-%m-%d %H:%M')}"
+class Inbox:
+    def __init__(self):
+        self.emails = []
+
+    def receive_email(self, email):
+        self.emails.append(email)
+
+    def list_emails(self):
+        if not self.emails:
+            print('Your inbox is empty.\n')
+            return
+        print('\nYour Emails:')
+        for i, email in enumerate(self.emails, start=1):
+            print(f'{i}. {email}')
+
+
+    def read_email(self, index):
+        if not self.emails:
+            print('Inbox is empty.\n')
+            return
+        actual_index = index - 1
+        if actual_index < 0 or actual_index >= len(self.emails):
+            print('Invalid email number.\n')
+            return
+        self.emails[actual_index].display_full_email()
+
+    def delete_email(self, index):
+        if not self.emails:
+            print('Inbox is empty.\n')
+            return
+        actual_index = index - 1
+        if actual_index < 0 or actual_index >= len(self.emails):
+            print('Invalid email number.\n')
+            return
+        del self.emails[actual_index]
+        print('Email deleted.\n')
+        
 class User:
     def __init__(self, name):
         self.name = name
@@ -30,41 +70,43 @@ class User:
     def send_email(self, receiver, subject, body):
         email = Email(sender=self, receiver=receiver, subject=subject, body=body)
         receiver.inbox.receive_email(email)
+        print(f'Email sent from {self.name} to {receiver.name}!\n')
 
-class Inbox:
-    def __init__(self):
-        self.emails = []
+    def check_inbox(self):
+        print(f"\n{self.name}'s Inbox:")
+        self.inbox.list_emails()
+                                                                                                    #Here's how strftime() works with format codes:
+
+                                                    #Example Code
+                                                #now = datetime.datetime.now()
+                                                #print(now.strftime("%Y-%m-%d"))  # Output: 2024-03-15 (year-month-day with - separator)
+                                             #The format codes like %Y (year), %m (month), %d (day) tell strftime() what to include, and you can add separators like - between them.
+
+                                         #At the bottom of your code, create a variable called current_time and assign it datetime.datetime.now(). Then use strftime() to print the time in hours:minutes:seconds format using : as the separator
+                                       #Use these format codes: %H for hours (24-hour format), %M for minutes, and %S for secon
+    def read_email(self, index):
+        self.inbox.read_email(index)
+
+    def delete_email(self, index):
+        self.inbox.delete_email(index)
+
+def main():
+    tory = User('Tory')
+    ramy = User('Ramy')        
     
-    def receive_email(self, email):
-        self.emails.append(email)
+    tory.send_email(ramy, 'Hello', 'Hi Ramy, just saying hello!')
+    ramy.send_email(tory, 'Re: Hello', 'Hi Tory, hope you are fine.')
     
-    def list_emails(self):
-        if not self.emails:
-            print("Your inbox is empty.\n")
-            return
-        
-        print("\nYour Emails:")
-        for i, email in enumerate(self.emails, start=1):
-            print(f"{i}. {email}")
-    def read_email(self,index):
-        if not self.emails:
-            print("Inbox is empty.\n ")
-            return
-        
-        actual_index = index - 1
-        if actual_index < 0 or actual_index >= len(self.emails):
-            print("Invalid email number.\n")
-            return
-        
-        self.emails[actual_index].display_full_email()
-#Before integrating timestamps into our email system, let's practice working with datetime formatting. The datetime.datetime.now() function gives us the current date and time, and we can use the strftime() method to format it in different ways.
+    
+if __name__ == '__main__':
+    main()
 
-#Here's how strftime() works with format codes:
+                                                 #Here's how strftime() works with format codes:
 
-#Example Code
-#now = datetime.datetime.now()
-#print(now.strftime("%Y-%m-%d"))  # Output: 2024-03-15 (year-month-day with - separator)
-#The format codes like %Y (year), %m (month), %d (day) tell strftime() what to include, and you can add separators like - between them.
+                                                    #Example Code
+                                                #now = datetime.datetime.now()
+                                                #print(now.strftime("%Y-%m-%d"))  # Output: 2024-03-15 (year-month-day with - separator)
+                                             #The format codes like %Y (year), %m (month), %d (day) tell strftime() what to include, and you can add separators like - between them.
 
-#At the bottom of your code, create a variable called current_time and assign it datetime.datetime.now(). Then use strftime() to print the time in hours:minutes:seconds format using : as the separator
-#Use these format codes: %H for hours (24-hour format), %M for minutes, and %S for seconds.
+                                         #At the bottom of your code, create a variable called current_time and assign it datetime.datetime.now(). Then use strftime() to print the time in hours:minutes:seconds format using : as the separator
+                                       #Use these format codes: %H for hours (24-hour format), %M for minutes, and %S for seconds.
