@@ -49,4 +49,22 @@ class Inbox:
     def read_email(self,index):
         if not self.emails:
             print("Inbox is empty.\n ")
-            return        
+            return
+        
+        actual_index = index - 1
+        if actual_index < 0 or actual_index >= len(self.emails):
+            print("Invalid email number.\n")
+            return
+        
+        self.emails[actual_index].display_full_email()
+#Before integrating timestamps into our email system, let's practice working with datetime formatting. The datetime.datetime.now() function gives us the current date and time, and we can use the strftime() method to format it in different ways.
+
+#Here's how strftime() works with format codes:
+
+#Example Code
+#now = datetime.datetime.now()
+#print(now.strftime("%Y-%m-%d"))  # Output: 2024-03-15 (year-month-day with - separator)
+#The format codes like %Y (year), %m (month), %d (day) tell strftime() what to include, and you can add separators like - between them.
+
+#At the bottom of your code, create a variable called current_time and assign it datetime.datetime.now(). Then use strftime() to print the time in hours:minutes:seconds format using : as the separator
+#Use these format codes: %H for hours (24-hour format), %M for minutes, and %S for seconds.
