@@ -26,12 +26,13 @@ class Wallet:
     def __init__(self,balance):
          self.__balance=balance 
     
-         
-    def __validate_balance(self):
-         if self.__balance<0:
-              raise ValueError("Balance cannot be negative")
+
+    def __validate_balance(self,amount):
+         if amount<0:
+              raise ValueError("amount cannot be negative")
          
     def deposit(self,amount):
+         self.__validate_balance(amount)
          self.__balance+=amount
               
     def withdraw(self,amount):
