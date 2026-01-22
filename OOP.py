@@ -32,7 +32,6 @@ class Wallet:
               raise ValueError("Balance cannot be negative")
          
     def deposit(self,amount):
-         self.__validate_balance(amount)
          self.__balance+=amount
               
     def withdraw(self,amount):
