@@ -23,32 +23,32 @@ print(cal_1.add(5,200))
 
 #adding a private attribute __validate in the first example of class wallet
 class Wallet:
-    def __init__(self,balance):
-         self.__balance=balance 
-    
+   def __init__(self):
+       self.__balance = 0
 
-    def __validate_balance(self,amount):
-         if amount<0:
-              raise ValueError("amount cannot be negative")
-         
-    def deposit(self,amount):
-         self.__validate_balance(amount)
-         self.__balance+=amount
-              
-    def withdraw(self,amount):
-         self.__validate_balance(amount)
-         if amount>self.__balance:
-              raise ValueError("insuffient funds")
-         self.__balance-=amount
-         
-    def get_balance(self):
-         return self.__balance
-    
-acc_1=Wallet(500)
-print(acc_1.get_balance())
-print(acc_1.deposit(200))
-print(acc_1.get_balance())
-print(acc_1.deposit(-50))  # no change as amount is negative
+   def __validate(self, amount):
+       if amount < 0:
+           raise ValueError('Amount must be positive')
+
+   def deposit(self, amount):
+       self.__validate(amount)
+       self.__balance += amount
+
+   def withdraw(self, amount):
+       self.__validate(amount)
+       if amount > self.__balance:
+           raise ValueError('Insufficient funds')
+       self.__balance -= amount
+
+   def get_balance(self):
+       return self.__balance
+
+acct_one = Wallet()
+acct_one.deposit(3)
+print(acct_one.get_balance()) # 3
+
+acct_one.deposit(50)
+print(acct_one.get_balance()) # 53
 
 
          
