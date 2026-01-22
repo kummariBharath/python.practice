@@ -7,8 +7,10 @@ class Wallet:
     def withdraw(self,amount):
          if amount<=self._balance:
               raise ValueError("insuffient funds")
+    def get_balance(self):
+         return self._balance     
 acc_1=Wallet(500)
-print(acc_1.self._balance)              
+print(acc_1.self._balance)    # Accessing the balance directly (not recommended)          
 
          
          
