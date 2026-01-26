@@ -38,7 +38,14 @@ class GameCharacter:
         print(f"{self._name} leveled up to {self._level}!")   
 
     def __str__(self):
-        return f"Name:{self._name}\n Level:{self._level}\n Health:{self._health}\n Mana:{self._mana}"        
-      
-    
+        return f"Name: {self._name}\nLevel: {self._level}\nHealth: {self._health}\nMana: {self._mana}" 
+
+
+hero=GameCharacter("Kratos")
+print(hero)
+hero.health -= 30
+hero.mana -=10
+print(hero)
+hero.level_up()
+print(hero)
 
