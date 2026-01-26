@@ -30,6 +30,15 @@ class GameCharacter:
         if 0<=mana<=50:
             self._mana=mana
     def level(self):
-        return self._level        
+        return self._level    
+    def level_up(self):
+        self._level+=1
+        self.health=100
+        self.mana=50
+        print(f"{self._name} leveled up to {self._level}!")   
+
+    def __str__(self):
+        return f"Name:{self._name}\n Level:{self._level}\n Health:{self._health}\n Mana:{self._mana}"        
+      
     
 
