@@ -55,3 +55,4 @@ example1 = Example(
     'I cannot be accessed directly from outside the class'
 )
 print(example1.__dict__) #{'_Example__private': 'I cannot be accessed directly from outside the class'}
+print(example1._internal) #I can be accessed from outside the class, but should
