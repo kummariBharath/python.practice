@@ -9,6 +9,11 @@ class Developer:
 class Manager(Developer):
     def __init__(self,name_1,name_2,name_3):
         super().__init__(name_1,name_2) #super() is used to call the parent class constructor
-        self.name_3=name_3    
+        self.name_3=name_3 
+
+dev_1=Manager("bharath","kumar","raju")
+print(dev_1.code())
+print(dev_1.test())
+print(f"{dev_1.name_3} manages the team")
     
     
