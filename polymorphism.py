@@ -18,6 +18,17 @@ job_search(industry())
 job_search(Company("TCS"))
 
 #Name Mangling in Inheritance
+#class parent:
+#    def __init__(self):
+#        self.__name="bharath" #private variable
+#        def get_name(self):
+ #           return self.__name
+#class child(parent):
+#    def diplay(self):
+#        return self.__name    
+#c=child()
+#print(c.diplay()) #AttributeError: 'child' object has no attribute '__name'            
+ #correct way below
 class parent:
     def __init__(self):
         self.__name="bharath" #private variable
@@ -25,6 +36,6 @@ class parent:
             return self.__name
 class child(parent):
     def diplay(self):
-        return self.__name        
-        
-    
+        return self.get_name()    
+c=child()
+print(c.diplay())
