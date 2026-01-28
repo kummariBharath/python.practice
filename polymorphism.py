@@ -12,7 +12,7 @@ class industry:
 def job_search(job):
     print(job.hire())  
 
-job_search(Company())
+job_search(Company("google"))
 job_search(organization())
 job_search(industry())   
 job_search(Company("TCS"))
