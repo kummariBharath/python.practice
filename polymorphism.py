@@ -1,4 +1,4 @@
-class Company:
+class Company: #polymorphism
     def __init__(self,name):
         self.name=name
     def hire(self):
@@ -14,6 +14,7 @@ def job_search(job):
 
 job_search(Company())
 job_search(organization())
-job_search(industry())            
+job_search(industry())   
+job_search(Company("TCS"))
         
     
