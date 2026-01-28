@@ -8,6 +8,8 @@ class organization:
         return "organization started hiring"
 class industry:
     def hire(self):
-        return "industry started to hire"    
+        return "industry started to hire" 
+def job_search(job):
+    print(job.hire())       
         
     
