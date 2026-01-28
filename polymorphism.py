@@ -17,5 +17,14 @@ job_search(organization())
 job_search(industry())   
 job_search(Company("TCS"))
 
+#Name Mangling in Inheritance
+class parent:
+    def __init__(self):
+        self.__name="bharath" #private variable
+        def get_name(self):
+            return self.__name
+class child(parent):
+    def diplay(self):
+        return self.__name        
         
     
