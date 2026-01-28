@@ -10,6 +10,10 @@ class industry:
     def hire(self):
         return "industry started to hire" 
 def job_search(job):
-    print(job.hire())       
+    print(job.hire())  
+
+job_search(Company())
+job_search(organization())
+job_search(industry())            
         
     
