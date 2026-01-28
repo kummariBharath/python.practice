@@ -56,3 +56,15 @@ example1 = Example(
 )
 print(example1.__dict__) #{'_Example__private': 'I cannot be accessed directly from outside the class'}
 print(example1._internal) #I can be accessed from outside the class, but should
+
+class Parent:
+    def __init__(self):
+        self.__data = 'Parent data'
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__() #call parent comnstruuctor
+        self.__data = 'Child data'
+
+c = Child()
+print(c.__dict__) # {'_Parent__data': 'Parent data', '_Child__data': 'Child data'}
