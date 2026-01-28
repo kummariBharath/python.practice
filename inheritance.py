@@ -15,5 +15,6 @@ dev_1=Manager("bharath","kumar","raju")
 print(dev_1.code())
 print(dev_1.test())
 print(f"{dev_1.name_3} manages the team")
+print(f"{dev_1.name_1}, {dev_1.name_2}, and {dev_1.name_3} are working together on the project.")
     
     
