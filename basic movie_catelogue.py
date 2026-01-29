@@ -16,8 +16,10 @@ class MovieCatelogue:
     def __str__(self):
         if not self.items:
             return "Media Catalogue (empty)"
-        return "Media Catalogue"
-
+        result = f'Media Catalogue ({len(self.items)} items):\n\n'
+        for i, item in enumerate(self.items, start=1):
+            result += f'{i}. {item}\n'
+        return result
 try:
     movie1 = Movie('The Matrix', 1999, 'The Wachowskis', 136)
 except ValueError as e:
