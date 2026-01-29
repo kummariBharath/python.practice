@@ -8,6 +8,9 @@ class Movie:
         self.duration = duration
     def __str__(self):
         return f'{self.title} ({self.year}) - {self.duration} min, {self.director}'
+class MovieCatelogue:
+    def __init__(self):
+        self.items=[]
 
 try:
     movie1 = Movie('The Matrix', 1999, 'The Wachowskis', 136)
