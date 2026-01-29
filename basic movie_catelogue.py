@@ -20,7 +20,10 @@ class MovieCatelogue:
         for i, item in enumerate(self.items, start=1):
             result += f'{i}. {item}\n'
         return result
+catalogue = MovieCatelogue()
 try:
     movie1 = Movie('The Matrix', 1999, 'The Wachowskis', 136)
+    catalogue.add(movie1)
+    print(catalogue)
 except ValueError as e:
     print(f"Validation Error: {e}")
