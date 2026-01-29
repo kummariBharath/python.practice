@@ -20,7 +20,7 @@ class TVSeries(Movie):
         self.seasons = seasons
         self.total_episodes = total_episodes
     def __str__(self):
-        return f"{self.title} ({self.year}) - {self.seasons} seasons, {self.total_episodes}  episodes, {self.duration} min avg, {self.director}"
+        return f"{self.title} ({self.year}) - {self.seasons} seasons, {self.total_episodes} episodes, {self.duration} min avg, {self.director}"
 class MediaCatalogue:
     def __init__(self):
         self.items = []
@@ -50,3 +50,5 @@ try:
     series1 = TVSeries('Scrubs', 2001, 'Bill Lawrence', 24, 9, 182)
 
     print(catalogue)
+except ValueError as e:
+    print(f'Validation Error: {e}')
