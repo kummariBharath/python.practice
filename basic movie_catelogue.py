@@ -1,7 +1,7 @@
 class MediaError(Exception):
     """Custom exception for media-related errors."""
     def __init__(self,message,obj):
-        super().__init__(message)
+        super().__init__(message) #it inherits  from Exception class
         self.obj=obj
 
 
