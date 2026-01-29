@@ -1,14 +1,34 @@
+class MediaError(Exception):
+    """Custom exception for media-related errors."""
+    def __init__(self,message,obj):
+        super().__init__(message)
+        self.obj=obj
+
+
+
 class Movie:
+    """Parent class representing a movie."""
+    
     def __init__(self, title, year, director, duration):
-        if not title or title.strip() == "":
-            raise ValueError("Title cannot be empty")
+        if not title.strip():
+            raise ValueError('Title cannot be empty')
+        if year < 1895:
+            raise ValueError('Year must be 1895 or later')
+        if not director.strip():
+            raise ValueError('Director cannot be empty')
+        if duration <= 0:
+            raise ValueError('Duration must be positive')
         self.title = title
         self.year = year
         self.director = director
         self.duration = duration
+
     def __str__(self):
         return f'{self.title} ({self.year}) - {self.duration} min, {self.director}'
+
 class TVSeries(Movie):
+    """Child class representing an entire TV series."""
+
     def __init__(self, title, year, director, duration, seasons, total_episodes):
         super().__init__(title, year, director, duration)
 
@@ -19,13 +39,19 @@ class TVSeries(Movie):
         
         self.seasons = seasons
         self.total_episodes = total_episodes
+
     def __str__(self):
-        return f"{self.title} ({self.year}) - {self.seasons} seasons, {self.total_episodes} episodes, {self.duration} min avg, {self.director}"
+        return f'{self.title} ({self.year}) - {self.seasons} seasons, {self.total_episodes} episodes, {self.duration} min avg, {self.director}'
+
 class MediaCatalogue:
+    """A catalogue that can store different types of media items."""
+
     def __init__(self):
         self.items = []
 
     def add(self, media_item):
+        if not isinstance(media_item, Movie):
+            raise TypeError('Only Movie or TVSeries instances can be added')
         self.items.append(media_item)
 
     def __str__(self):
@@ -40,7 +66,6 @@ class MediaCatalogue:
 
 catalogue = MediaCatalogue()
 
-
 try:
     movie1 = Movie('The Matrix', 1999, 'The Wachowskis', 136)
     catalogue.add(movie1)
@@ -48,6 +73,9 @@ try:
     catalogue.add(movie2)
 
     series1 = TVSeries('Scrubs', 2001, 'Bill Lawrence', 24, 9, 182)
+    catalogue.add(series1)
+    series2 = TVSeries('Breaking Bad', 2008, 'Vince Gilligan', 47, 5, 62)
+    catalogue.add(series2)
 
     print(catalogue)
 except ValueError as e:
