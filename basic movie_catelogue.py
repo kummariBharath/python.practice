@@ -13,6 +13,10 @@ class MovieCatelogue:
         self.items=[]
     def add(self, media_item):
         self.items.append(media_item)
+    def __str__(self):
+        if not self.items:
+            return "Media Catalogue (empty)"
+        return "Media Catalogue"
 
 try:
     movie1 = Movie('The Matrix', 1999, 'The Wachowskis', 136)
