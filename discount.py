@@ -60,8 +60,8 @@ class DiscountEngine:
         return min(prices)
 
 if __name__ == '__main__':
-    product = Product('Wireless Mouse', 50.0)
-    user_tier = 'Premium'
+    product = Product('battery', 1000.0)
+    user_tier = 'not premium'
 
     strategies = [
         PercentageDiscount(10),
