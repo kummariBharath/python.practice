@@ -65,8 +65,8 @@ if __name__ == '__main__':
 
     strategies = [
         PercentageDiscount(10),
-        FixedAmountDiscount(5),
-        PremiumUserDiscount()
+        FixedAmountDiscount(1),
+        PremiumUserDiscount(10)
     ]
 
     engine = DiscountEngine(strategies)
