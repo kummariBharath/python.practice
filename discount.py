@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     strategies = [
         PercentageDiscount(10),
-        FixedAmountDiscount(100),
+        FixedAmountDiscount(50),
         PremiumUserDiscount()
     ]
 
