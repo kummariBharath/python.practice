@@ -13,3 +13,4 @@ class Player(ABC):
         return self.position
     @abstractmethod
     def level_up(self):
+        pass
