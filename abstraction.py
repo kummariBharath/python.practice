@@ -34,4 +34,4 @@ class submit_project(Assignment):
         print(f"{self.name} submitted the project")        
 s=submit_assignment("bharath")
 print(s.name)
-print(s.submit())            
+print(s.submit())           
