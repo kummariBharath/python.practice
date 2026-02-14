@@ -1,4 +1,7 @@
 import math
+import random
+import time
+
 class Rectangle:
     def __init__(self,width,height):
         self.width=width
@@ -24,6 +27,23 @@ class Rectangle:
         fit_width=self.width//shape.width
         fit_height=self.height//shape.height
         return fit_width*fit_height
+
+    def spin(self):
+        """Rotates the rectangle 90 degrees."""
+        self.width, self.height = self.height, self.width
+
+    def get_colored_picture(self):
+        """Returns a string picture with a random color."""
+        if self.width > 50 or self.height > 50:
+            return "Too big for picture."
+        colors = ["\033[91m", "\033[92m", "\033[93m", "\033[94m", "\033[96m"] # Red, Green, Yellow, Blue, Cyan
+        reset = "\033[0m"
+        c = random.choice(colors)
+        return f"{c}{self.get_picture()}{reset}"
+
+    def __lt__(self, other):
+        return self.get_area() < other.get_area()
+
     def __str__(self):
         return f"Rectangle(width={self.width},height={self.height})"
 
@@ -42,13 +62,21 @@ class Square(Rectangle):
     def __str__(self):
         return f"Square(side={self.width})"
     
-rec=Rectangle(10,5)
-print(rec.get_area())
-print(rec.get_perimeter())
-print(rec.get_diagonal()) #diagonal means the length of the line segment connecting two opposite corners of the rectangle
-square=Square(10)
-print(square.get_area())
-print(square.get_perimeter())
-print(square.get_diagonal())
-print(rec.get_picture())
-
+if __name__ == "__main__":
+    print("--- Polygon Party ---")
+    shapes = []
+    for _ in range(5):
+        if random.choice([True, False]):
+            shapes.append(Rectangle(random.randint(3, 10), random.randint(3, 10)))
+        else:
+            shapes.append(Square(random.randint(3, 10)))
+    
+    print("Generating random shapes and sorting them by area...")
+    time.sleep(1)
+    shapes.sort() # Uses __lt__
+    
+    for shape in shapes:
+        print(f"\n{shape}")
+        print(f"Area: {shape.get_area()}")
+        print(shape.get_colored_picture())
+        time.sleep(0.5)
