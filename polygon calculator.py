@@ -46,4 +46,8 @@ rec=Rectangle(10,5)
 print(rec.get_area())
 print(rec.get_perimeter())
 print(rec.get_diagonal()) #diagonal means the length of the line segment connecting two opposite corners of the rectangle
+square=Square(10)
+print(square.get_area())
+print(square.get_perimeter())
+print(square.get_diagonal())
 
