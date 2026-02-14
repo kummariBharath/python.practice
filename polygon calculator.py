@@ -50,4 +50,5 @@ square=Square(10)
 print(square.get_area())
 print(square.get_perimeter())
 print(square.get_diagonal())
+print(rec.get_picture())
 
