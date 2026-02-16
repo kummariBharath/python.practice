@@ -11,8 +11,8 @@ if age >= 21:
 else:
     print('User is not eligible for Evening shows')
 
-is_member = False
-is_weekend = False
+is_member = input('Is the user a member? (yes/no): ').lower() == 'yes'
+is_weekend = input('Is it a weekend? (yes/no): ').lower() == 'yes'
 
 discount = 0
 if is_member and age >= 21:
