@@ -29,7 +29,7 @@ else:
 
 discount = 0
 if is_member and age >= 21:
-    discount = 3
+    discount = 25
     print('User qualifies for membership discount')
 else:
     print('User does not qualify for membership discount')
@@ -37,7 +37,7 @@ print('Discount:', discount)
 
 extra_charges = 0
 if is_weekend or show_time == 'Evening':
-    extra_charges = 2
+    extra_charges = 33
     print('Extra charges will be applied')
 else:
     print('No extra charges will be applied')
@@ -47,11 +47,11 @@ if age >= 21 or age >= 18 and (show_time != 'Evening' or is_member):
     print('Ticket booking condition satisfied')
 
     if seat_type == 'Premium':
-        service_charges = 5
+        service_charges = 45
     elif seat_type == 'Gold':
-        service_charges = 3
+        service_charges = 55
     else:
-        service_charges = 1
+        service_charges = 15
     print('Service charges:', service_charges)    
 else:
     print('Ticket booking failed due to restrictions')
