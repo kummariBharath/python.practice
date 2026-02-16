@@ -27,4 +27,5 @@ class Pawn(Player):
 pawn = Pawn()
 for _ in range(5):
     print(pawn.make_move())
-pawn.level_up()         
+pawn.level_up()  
+print(pawn.path)       
