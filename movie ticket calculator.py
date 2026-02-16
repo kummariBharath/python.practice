@@ -58,4 +58,7 @@ else:
     service_charges = 0
 
 total_price = base_price + extra_charges + service_charges - discount
-print('Total price of the ticket:', total_price)    
+print('Total price of the ticket:', total_price) 
+print('Thank you for using the movie ticket calculator!')
+
+
