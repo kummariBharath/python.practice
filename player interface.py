@@ -23,3 +23,8 @@ class Pawn(Player):
 
     def level_up(self):
         self.moves.extend([(1, 1), (1, -1), (-1, 1), (-1, -1)])
+#input from user
+pawn = Pawn()
+for _ in range(5):
+    print(pawn.make_move())
+         
