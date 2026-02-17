@@ -12,7 +12,7 @@ def get_valid_number(prompt):
 
 def generate_profile():
     print("\n--- New Employee Entry ---")
-    first_name = input("Enter employee's first name: ").strip().capitalize()
+    first_name = input("Enter employee's first name: ").strip().capitalize() #strip() to remove extra spaces, capitalize() to format name
     last_name = input("Enter employee's last name: ").strip().capitalize()
     full_name = f"{first_name} {last_name}"
     
