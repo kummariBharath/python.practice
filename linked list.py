@@ -21,3 +21,10 @@ class LinkedList:
                 current_node = current_node.next
             current_node.next = node
         self.length += 1
+    
+    def remove(self, element):
+        current_node = self.head
+        previous_node = None
+        while current_node is not None and current_node.element != element:
+            previous_node = current_node
+            current_node = current_node.next
