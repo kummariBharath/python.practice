@@ -1,5 +1,7 @@
 class HashTable: # Define the HashTable class
-    collection={} # Initialize the collection dictionary to store key-value pairs
+    def __init__(self):
+        self.collection={} # Initialize the collection dictionary to store key-value pairs
+
     def hash(self,string:str): # Define the hash method that takes a string key
         hash=0 # Initialize the hash value to 0
         for char in string: # Iterate through each character in the input string
