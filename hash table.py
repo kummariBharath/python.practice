@@ -22,3 +22,9 @@ class HashTable:
         if hash_value in self.collection and key in self.collection[hash_value]:
             return self.collection[hash_value][key]
         return None
+    
+
+my_hash_table = HashTable()
+my_hash_table.add("name","bharath")
+my_hash_table.add("age",20)
+print(my_hash_table.lookup("name"))
