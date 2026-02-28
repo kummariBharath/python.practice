@@ -16,5 +16,15 @@ print(dev_1.code())
 print(dev_1.test())
 print(f"{dev_1.name_3} manages the team")
 print(f"{dev_1.name_1}, {dev_1.name_2}, and {dev_1.name_3} are working together on the project.")
-    
+
+
+# inheritance example
+class vehicle:
+    def __init__(self,make,model):
+        self.make=make
+        self.model=model  
+    def start_engine(self):
+        return f"{self.make} {self.model} engine started."    
+class car
+
     
