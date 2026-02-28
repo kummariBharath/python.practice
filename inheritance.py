@@ -25,6 +25,12 @@ class vehicle:
         self.model=model  
     def start_engine(self):
         return f"{self.make} {self.model} engine started."    
-class car
+class car(vehicle):
+    def __init__(self,make,model,doors):
+        super().__init__(make,model)
+        self.doors=doors
+    def start_engine(self):
+        return f"{self.make} {self.model} with {self.doors} doors engine started."
 
-    
+car_1=car("ALTO","XL6",4)
+print(car_1.start_engine())   
