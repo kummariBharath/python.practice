@@ -37,7 +37,7 @@ def generate_profile():
 
     # Professional Output Card
     print("\n" + "="*50)
-    print(f"       EMPLOYEE PROFILE: {full_name.upper()}")
+    print(f"       EMPLOYEE PROFILE: {full_name.upper()}") 
     print("="*50)
     print(f"Position:      {position}")
     print(f"Department:    {department} (Hired: {year_code})")
