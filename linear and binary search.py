@@ -15,7 +15,7 @@ def binary_search(arr, target):
     low = 0
     high = len(arr) - 1
 
-    while low <= high:
+    while low <= high:     #The loop continues as long as the low index is less than or equal to the high index, meaning there are still elements to check.
         mid = (low + high) // 2  
 
         if arr[mid] == target:
