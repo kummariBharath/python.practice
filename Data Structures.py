@@ -46,3 +46,8 @@ def merge_sort(arr):
     sorted_list.extend(right[j:])
 
     return sorted_list
+
+#bisection method
+def bisection_method(number, tol=1e-7, max_iter=1000):
+    
+
