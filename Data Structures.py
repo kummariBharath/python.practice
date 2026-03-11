@@ -55,6 +55,32 @@ def bisection_method(number, tol=1e-7, max_iter=1000):
     if number<0:
         raise ValueError('square of zero is not in real numbers')
     if number==0 or number==1:
-        
+        print(f"The squareroot of {number} is {number}")
+    if number<1:
+        low=number
+        high=1
+    if number>1:
+        low=1
+        high=number
+    itertions=0
+    while (high-low)>tol and itertions<max_iter:
+        mid=low+high/2
+        if mid*mid>number:
+            high=mid
+        else:
+            low=mid
+            iterations += 1
+
+    if iterations == max_iter:
+        print(f"Failed to converge within {max_iter} iterations")
+        return None
+
+    root = (low + high) / 2
+    print(f"The square root of {number} is approximately {root}")
+    return root   
+ 
+
+
+
 
 
