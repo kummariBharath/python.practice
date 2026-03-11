@@ -20,3 +20,29 @@ def binary_search(search_list, value):
 print(binary_search([1, 2, 3, 4, 5], 3))
 print(binary_search([1, 2, 3, 4, 5, 9], 4))
 print(binary_search([1, 3, 5, 9, 14, 22], 10))
+
+#Merge sort
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    sorted_list = []
+    i = 0
+    j = 0
+
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            sorted_list.append(left[i])
+            i += 1
+        else:
+            sorted_list.append(right[j])
+            j += 1
+
+    sorted_list.extend(left[i:])
+    sorted_list.extend(right[j:])
+
+    return sorted_list
