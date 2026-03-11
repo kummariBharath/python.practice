@@ -1,4 +1,7 @@
 #binary search
+from ast import Raise
+
+
 def binary_search(search_list, value):
     path_to_target = []
     low = 0
@@ -49,5 +52,9 @@ def merge_sort(arr):
 
 #bisection method
 def bisection_method(number, tol=1e-7, max_iter=1000):
-    
+    if number<0:
+        raise ValueError('square of zero is not in real numbers')
+    if number==0 or number==1:
+        
+
 
