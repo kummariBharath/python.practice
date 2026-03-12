@@ -101,3 +101,20 @@ if __name__ == '__main__':
         print("\nProgram interrupted by user.")
     except ValueError:
         print("\nInvalid input. Please enter valid integers separated by spaces.")
+
+#QUICK SORT ALGORITHM
+def quick_sort(arr):
+    # Base case: if list has 0 or 1 element, it's already sorted
+    if len(arr) <= 1:
+        return arr
+
+    # Choose pivot (first element)
+    pivot = arr[0]
+
+    # Partition the list
+    less = [x for x in arr if x < pivot]
+    equal = [x for x in arr if x == pivot]
+    greater = [x for x in arr if x > pivot]
+
+    # Recursively sort and concatenate
+    return quick_sort(less) + equal + quick_sort(greater)
