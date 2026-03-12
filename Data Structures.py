@@ -149,3 +149,11 @@ def selection_sort(items):
             items[i], items[min_index] = items[min_index], items[i]
 
     return items 
+
+def verify_card_number(number: str):
+    if not number == '' and number != ' ': 
+        return "VALID!"
+        print(number)
+    else:
+        return "INVALID!"
+    
