@@ -118,3 +118,17 @@ def quick_sort(arr):
 
     # Recursively sort and concatenate
     return quick_sort(less) + equal + quick_sort(greater)
+ 
+if __name__ == '__main__':
+    try:
+        user_input = input("Enter numbers separated by spaces: ")
+        numbers = [int(x) for x in user_input.split()]
+        print('Unsorted array: ')
+        print(numbers)
+        sorted_numbers = quick_sort(numbers)
+        print('Sorted array (Quick Sort): ')
+        print(sorted_numbers)
+    except KeyboardInterrupt:
+        print("\nProgram interrupted by user.")
+    except ValueError:
+        print("\nInvalid input. Please enter valid integers separated by spaces.")
