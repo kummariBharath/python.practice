@@ -116,13 +116,10 @@ def merge_sort(array):
 
 
 if __name__ == '__main__':
-    numbers = [4, 10, 6, 14, 2, 1, 8, 5]
+    user_input = input("Enter numbers separated by spaces: ")
+    numbers = [int(x) for x in user_input.split()]
     print('Unsorted array: ')
     print(numbers)
     merge_sort(numbers)
-
-
-
-
-
-
+    print('Sorted array: ')
+    print(numbers)
