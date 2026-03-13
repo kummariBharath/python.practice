@@ -145,7 +145,7 @@ def selection_sort(items):
                 min_index = j
 
         if min_index != i:
-            items[i], items[min_index] = items[min_index], items[i]
+            items[i], items[min_index] = items[min_index], items[i] 
 
     return items 
     
