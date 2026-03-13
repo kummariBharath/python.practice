@@ -6,4 +6,4 @@ adj_matrix = [
     [2, INF, INF, 0]
 ]
 def shortest_path(matrix, start_node, target_node=None):
-    pass
+    pass 
