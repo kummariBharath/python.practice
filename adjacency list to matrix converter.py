@@ -11,12 +11,12 @@ def adjacency_list_matrix_converter(adj_list):
             matrix[node][neighbour]=1
     for row in matrix:
         print(row)        
-    return matrix  
+    
 A={
     0:[1,2],
     1:[2],
     2:[3,4],
-    3:[4,5]
+    3:[4,5] # as 5 is a neighbor of 3, it should be included in the matrix, even if it is not a key in the dictionary
 }
 print(adjacency_list_matrix_converter(A))  #call the function
 
