@@ -7,8 +7,8 @@ def dfs(matrix, start_node):
         
         if current not in visited:
             visited.append(current)
-            for neighbor in range(len(matrix[current])):
-                if matrix[current][neighbor] == 1 and neighbor not in visited:
-                    stack.append(neighbor)
+            for neighbour in range(len(matrix[current])):
+                if matrix[current][neighbour] == 1 and neighbour not in visited:
+                    stack.append(neighbour)
                     
     return visited
