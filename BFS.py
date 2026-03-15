@@ -6,6 +6,11 @@ def gen_parentheses(pairs):
     queue = [('', 0, 0)]
     result = []
     while queue:
-        print(queue)
+        current, opens_used, closes_used = queue.pop(0)
+        if len(current) == pairs * 2:
+            result.append(current)
+        else:
+            if opens_used < pairs:
+                queue.append((current + '(', opens_used + 1, closes_used))
     
     return result
