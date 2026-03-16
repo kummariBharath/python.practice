@@ -1,7 +1,4 @@
 # Recursive way without memorization takes O(2^n) time complexity and O(n) space complexity due to the call stack.
-
-
-
 def climb_staircase_(n):
     if n<=2:
         return n 
