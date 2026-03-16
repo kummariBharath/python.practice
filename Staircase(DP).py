@@ -62,7 +62,8 @@ def climb_stairs_tabulation(n):
     for i in range(3,n+1):# staring from 3
         dp[i] = dp[i-1] + dp[i-2]
     return dp[n]
-print(climb_stairs_tabulation(5))    
+print(climb_stairs_tabulation(5))   
+print(climb_stairs_tabulation(6)) 
 #tracing through the execution of climb_stairs_tabulation(5):
 # Initial state:
 #dp = [0, 1, 2, 0, 0, 0]
