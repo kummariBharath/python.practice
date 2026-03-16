@@ -45,4 +45,17 @@ print(memorization(5))
 
 
 
-#Bottom-up Approach
+#Tabulation (Bottom-Up Approach)
+#Tabulation builds the solution from the ground up, filling a table with solutions to subproblems
+
+def climb_stairs_tabulation(n):
+    if n<=2:
+        return n
+    #create a array for storing the elements from 0 to n
+    dp = [0]*(n+1)
+    dp[0]=1 # as climbing 1 step take 1 way
+    dp[1]=2 # as climmbing 2 steps takes 2 ways i..e 1+1 ,2
+
+    for i in range(3,n+1):# staring from 3
+        dp[i] = dp[i-1] + dp[i-2]
+        return dp[i]
