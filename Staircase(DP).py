@@ -1,5 +1,5 @@
 # Recursive way without memorization takes O(2^n) time complexity and O(n) space complexity due to the call stack.
-from typing import Final
+
 
 
 def climb_staircase_(n):
