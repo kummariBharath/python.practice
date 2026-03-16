@@ -1,4 +1,7 @@
 # Recursive way without memorization takes O(2^n) time complexity and O(n) space complexity due to the call stack.
+from typing import Final
+
+
 def climb_staircase_(n):
     if n<=2:
         return n 
@@ -53,9 +56,30 @@ def climb_stairs_tabulation(n):
         return n
     #create a array for storing the elements from 0 to n
     dp = [0]*(n+1)
-    dp[0]=1 # as climbing 1 step take 1 way
-    dp[1]=2 # as climmbing 2 steps takes 2 ways i..e 1+1 ,2
+    dp[1]=1 # as climbing 1 step take 1 way
+    dp[2]=2 # as climmbing 2 steps takes 2 ways i..e 1+1 ,2
 
     for i in range(3,n+1):# staring from 3
         dp[i] = dp[i-1] + dp[i-2]
-        return dp[i]
+    return dp[n]
+print(climb_stairs_tabulation(5))    
+#tracing through the execution of climb_stairs_tabulation(5):
+# Initial state:
+#dp = [0, 1, 2, 0, 0, 0]
+ #    [0, 1, 2, 3, 4, 5] ← indices (step numbers)
+
+#Step by step construction:
+#
+#i = 3:
+ # dp[3] = dp[2] + dp[1] = 2 + 1 = 3
+ # dp = [0, 1, 2, 3, 0, 0]
+  
+#i = 4:
+ # dp[4] = dp[3] + dp[2] = 3 + 2 = 5
+  #dp = [0, 1, 2, 3, 5, 0]
+  
+#i = 5:
+  #dp[5] = dp[4] + dp[3] = 5 + 3 = 8
+ # dp = [0, 1, 2, 3, 5, 8]
+
+#Final result: dp[5] = 8     
