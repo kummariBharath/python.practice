@@ -34,4 +34,7 @@ class Solution:
 cal=Solution()
 n=10
 cal.pattern7(n)
+
+
+
                  
