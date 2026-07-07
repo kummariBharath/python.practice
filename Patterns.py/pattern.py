@@ -36,7 +36,7 @@ n=10
 cal.pattern7(n)
 
 class Solution:
-    def pattern(self,n):
+    def pattern2(self,n):
         for i in range(n):
             for j in range(n-i-2):
                 print(' ',end='')
@@ -44,6 +44,10 @@ class Solution:
                 print('$',end='')
             for j in range(n-i-2):
                 print(' ',end='')
-            p           
+            print()
+        print()
+cale = Solution()
+n=7
+cale.pattern2(n)
 
                  
