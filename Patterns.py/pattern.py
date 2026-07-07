@@ -32,6 +32,6 @@ class Solution:
             print()
         print()   
 cal=Solution()
-n=5
+n=10
 cal.pattern7(n)
                  
