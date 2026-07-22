@@ -1,4 +1,4 @@
-"""
+
 class Solution:
     def pattern(self,N):
         for i in range(N):
@@ -105,12 +105,12 @@ def fibonacci(n):
         return fibonacci(n-1)+fibonacci(n-2)
 for i in range(n):
     print(fibonacci(i),end=" ")
-"""
+
 #Two sum
 num1=list(map(int,input("enter").split(',')))
 target=5643
 for i in range(len(num1)):
-    for j in range(len(num1)):
+    for j in range(i+1,len(num1)):
         if num1[i] + num1[j] == target:
             print([i,j])
 
