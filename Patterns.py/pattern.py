@@ -1,3 +1,4 @@
+"""
 class Solution:
     def pattern(self,N):
         for i in range(N):
@@ -49,5 +50,17 @@ class Solution:
 cale = Solution()
 n=7
 cale.pattern2(n)
+"""
+#prime number 
+count=0  
+num=int(input("enter your number"))
+for i in range(1,num):
+    if num%i==0:
+        count+=1
+if count==1:
+    print("prime number")
+    
+else:
+    print("not a prime number")
 
                  
