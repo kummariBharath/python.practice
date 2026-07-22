@@ -105,6 +105,15 @@ def fibonacci(n):
         return fibonacci(n-1)+fibonacci(n-2)
 for i in range(n):
     print(fibonacci(i),end=" ")
+
+#Two sum
+num1=[23,44,55,1,33,44,5566,77]
+target=5643
+for i in range(len(num1)):
+    for j in range(len(num1)):
+        if num[i] + num[j] == target:
+            print([i,j])
+            
     
 
 
