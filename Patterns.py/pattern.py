@@ -107,7 +107,7 @@ for i in range(n):
     print(fibonacci(i),end=" ")
 """
 #Two sum
-num1=list(int(input("enter num")))
+num1=list(map(int,input("enter").split(',')))
 target=5643
 for i in range(len(num1)):
     for j in range(len(num1)):
