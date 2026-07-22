@@ -111,7 +111,7 @@ num1=list(int(input("enter num")))
 target=5643
 for i in range(len(num1)):
     for j in range(len(num1)):
-        if num[i] + num[j] == target:
+        if num1[i] + num1[j] == target:
             print([i,j])
 
     
