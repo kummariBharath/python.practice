@@ -114,6 +114,7 @@ for i in range(len(num1)):
         if num1[i] + num1[j] == target:
             print([i,j])
 
+
     
 
 
