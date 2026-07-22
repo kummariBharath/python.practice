@@ -50,7 +50,7 @@ class Solution:
 cale = Solution()
 n=7
 cale.pattern2(n)
-"""
+
 #prime number 
 count=0  
 num=int(input("enter your number"))
@@ -62,5 +62,50 @@ if count==1:
     
 else:
     print("not a prime number")
+
+"""
+
+#palidrome
+a=input("enter a string")
+b=a[:1]
+print(b)
+
+#Palindrome
+a=input("enter a str:")
+b=a[::-1]
+if a==b:
+    print("a is palindrome")
+else:
+    print("Not a palindrome")
+
+
+#Sum of two number using loop
+nums = [5,100]
+sum=0
+for num in nums:
+    sum+=num
+print(sum)
+
+#Fibonacci number using simple logic loop(logic is Each number is the sum of the previous two numbers.) 
+num=int(input("enter your num"))
+a=0
+b=1
+for i in range(num):
+    print(a,end=" ")
+    c=a+b #addding the first two and assigning to 'c'
+    a=b #the b value is shifted to 'a'
+    b=c #c is assigned to 'b'
+
+#fib using recursion
+n=int(input("enter your num"))
+def fibonacci(n):
+    if n<=1:
+        return n
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+for i in range(n):
+    print(fibonacci(i),end=" ")
+    
+
 
                  
