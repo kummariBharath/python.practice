@@ -98,7 +98,7 @@ for i in range(num):
 
 #fib using recursion
 n=int(input("enter your num"))
-def fibonacci(n):
+def fibonacci(n): 
     if n<=1:
         return n
     else:
@@ -114,6 +114,9 @@ for i in range(len(num1)):
         if num1[i] + num1[j] == target:
             print([i,j])
 
+#palidrome using loop
+a=input("enter a string:")
+b=a[::-1]
 
     
 
