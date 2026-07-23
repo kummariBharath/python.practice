@@ -1,4 +1,4 @@
-"""
+
 class Solution:
     def pattern(self,N):
         for i in range(N):
@@ -113,7 +113,7 @@ for i in range(len(num1)):
     for j in range(i+1,len(num1)):
         if num1[i] + num1[j] == target:
             print([i,j])
-"""
+
 #palidrome using loop
 a=input("enter a string:")
 b=""
@@ -123,6 +123,7 @@ if a==b:
     print("String is palindrome")
 else:
     print("String is not palindrome")
+    
 
        
 
