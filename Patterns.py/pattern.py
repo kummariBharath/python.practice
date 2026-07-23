@@ -117,6 +117,15 @@ for i in range(len(num1)):
 #palidrome using loop
 a=input("enter a string:")
 b=a[::-1]
+for i in range(len(a)):
+    if a[i]==b[i]:
+        print("palindrome")
+    else:
+        print("not a palindrome")
+        break 
+
+
+
 
     
 
