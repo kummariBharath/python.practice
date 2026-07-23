@@ -1,4 +1,4 @@
-
+"""
 class Solution:
     def pattern(self,N):
         for i in range(N):
@@ -113,17 +113,13 @@ for i in range(len(num1)):
     for j in range(i+1,len(num1)):
         if num1[i] + num1[j] == target:
             print([i,j])
-
+"""
 #palidrome using loop
 a=input("enter a string:")
 b=a[::-1]
-for i in range(len(a)):
-    if a[i]==b[i]:
-        print("palindrome")
-    else:
-        print("not a palindrome")
-        break 
+#it should print str is palindrome once after iter
 
+       
 
 
 
