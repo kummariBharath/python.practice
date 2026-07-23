@@ -116,9 +116,7 @@ for i in range(len(num1)):
 
 #palidrome using loop
 a=input("enter a string:")
-b=""
-for char in a:
-    b=a[::-1]
+b=a[::-1]
 if a==b:
     print("String is palindrome")
 else:
