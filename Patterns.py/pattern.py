@@ -1,4 +1,5 @@
 
+"""
 class Solution:
     def pattern(self,N):
         for i in range(N):
@@ -126,7 +127,15 @@ else:
 for i in range(1,6):
     print(i)
     if i==3:
-        break       
+        break   
+"""
+n=int(input("enter a three digit number:"))
+a=n//100
+b=(n//10)%10
+c=n%10
+print('Sum =',a+b+c)
+
+
 
 
 
