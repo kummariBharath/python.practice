@@ -96,52 +96,12 @@ for i in range(num):
     a=b #the b value is shifted to 'a'
     b=c #c is assigned to 'b'
 
-#fib using recursion
-n=int(input("enter your num"))
-def fibonacci(n): 
-    if n<=1:
-        return n
-    else:
-        return fibonacci(n-1)+fibonacci(n-2)
-for i in range(n):
-    print(fibonacci(i),end=" ")
-
-#Two sum
-num1=list(map(int,input("enter").split(',')))
-target=5643
-for i in range(len(num1)):
-    for j in range(i+1,len(num1)):
-        if num1[i] + num1[j] == target:
-            print([i,j])
-
-#palidrome using loop
-a=input("enter a string:")
-b=a[::-1]
-if a==b:
-    print("String is palindrome")
-else:
-    print("String is not palindrome")
-    
-
-for i in range(1,6):
-    print(i)
-    if i==3:
-        break   
 
 n=int(input("enter a three digit number:"))
 a=n//100
 b=(n//10)%10
 c=n%10
 print('Sum =',a+b+c)
-
-#prime number
-n=5
-count=0
-for i in range(1,n):
-    if n%2==0:
-        count+=1
-    else:
-        print("prime number")
 
 #hollow square
 n=5

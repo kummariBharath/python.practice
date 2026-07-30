@@ -1,34 +1,31 @@
-class Stack:
-    def __init__(self):
-        self.items = []
-        self.length = 0
+#fib using recursion
+n=int(input("enter your num"))
+def fibonacci(n): 
+    if n<=1:
+        return n
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+for i in range(n):
+    print(fibonacci(i),end=" ")
+
+#Two sum
+num1=list(map(int,input("enter").split(',')))
+target=5643
+for i in range(len(num1)):
+    for j in range(i+1,len(num1)):
+        if num1[i] + num1[j] == target:
+            print([i,j])
+
+#palidrome using loop
+a=input("enter a string:")
+b=a[::-1]
+if a==b:
+    print("String is palindrome")
+else:
+    print("String is not palindrome")
     
-    def push(self, item):
-        self.items.append(item)
-        self.length += 1
-    
-    def pop(self):
-        if self.length == 0:
-            return None
-        self.length -= 1
-        return self.items.pop()
-    
-    def is_empty(self):
-        return self.length == 0
 
-
-# Test the Stack class
-stack = Stack()
-print(f"Is stack empty? {stack.is_empty()}")  # True
-
-stack.push(10)
-stack.push(20)
-print(f"Is stack empty? {stack.is_empty()}")  # False
-print(f"Stack length: {stack.length}")  # 2
-
-stack.pop()
-stack.pop()
-print(f"Is stack empty? {stack.is_empty()}")  # True
-
-
-
+for i in range(1,6):
+    print(i)
+    if i==3:
+        break   
