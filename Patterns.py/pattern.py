@@ -1,5 +1,4 @@
 
-"""
 class Solution:
     def pattern(self,N):
         for i in range(N):
@@ -134,7 +133,7 @@ a=n//100
 b=(n//10)%10
 c=n%10
 print('Sum =',a+b+c)
-"""
+
 #prime number
 n=5
 count=0
