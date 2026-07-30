@@ -29,3 +29,6 @@ print(f"Stack length: {stack.length}")  # 2
 stack.pop()
 stack.pop()
 print(f"Is stack empty? {stack.is_empty()}")  # True
+
+
+

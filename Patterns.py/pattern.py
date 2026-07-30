@@ -128,14 +128,21 @@ for i in range(1,6):
     print(i)
     if i==3:
         break   
-"""
+
 n=int(input("enter a three digit number:"))
 a=n//100
 b=(n//10)%10
 c=n%10
 print('Sum =',a+b+c)
-
-
+"""
+#prime number
+n=5
+count=0
+for i in range(1,n):
+    if n%2==0:
+        count+=1
+    else:
+        print("prime number")
 
 
 
