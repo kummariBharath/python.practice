@@ -65,7 +65,6 @@ def sum(n):
         return n
     return n+sum(n-1)
 print(sum(5))
-"""
 #Print numbers from 1 to N using recursion
 n=25
 def printnum(n):
@@ -74,6 +73,15 @@ def printnum(n):
     printnum(n-1)
     print(n,end=' ')
 printnum(n)
+"""
+#another method
+n=25
+def print_numbers(i):
+    if i<=n:
+        print(i,end=' ')
+        print_numbers(i+1)
+        
+print_numbers(1)
 
 
 
