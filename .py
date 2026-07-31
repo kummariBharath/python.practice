@@ -102,7 +102,7 @@ def is_prime_recursive(n, i=2):
     # Base case: if n is less than 2, it's not prime
     if n < 2:
         return False
-    # Base case: if i reaches n, n is prime
+    # Base case: if i reaches n, n is prime 
     if i == n:
         return True
     # If n is divisible by i, it's not prime
