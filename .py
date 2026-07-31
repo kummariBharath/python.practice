@@ -87,7 +87,7 @@ print_numbers(1)
 # finding a num is prime using recursion
 def prime(n):
     count=0
-    for i in range(1,n):
+    for i in range(1,n+1):
         if n%i==0:
             count+=1
     if count==2:
@@ -97,10 +97,21 @@ def prime(n):
 print(prime(7))
 print(prime(8))
 
+#prime using recursion (corrected and more efficient)
+def is_prime_recursive(n, i=2):
+    # Base case: if n is less than 2, it's not prime
+    if n < 2:
+        return False
+    # Base case: if i reaches n, n is prime
+    if i == n:
+        return True
+    # If n is divisible by i, it's not prime
+    if n % i == 0:
+        return False
+    return is_prime_recursive(n, i + 1)
 
-
-
-
+print(is_prime_recursive(7))
+print(is_prime_recursive(8))
 
 
 
