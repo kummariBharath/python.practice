@@ -84,6 +84,19 @@ def print_numbers(i):
 print_numbers(1)
 
 
+# finding a num is prime using recursion
+def prime(n):
+    count=0
+    for i in range(1,n):
+        if n%i==0:
+            count+=1
+    if count==2:
+        return True
+    else:
+        return False
+print(prime(7))
+print(prime(8))
+
 
 
 
