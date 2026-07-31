@@ -29,3 +29,24 @@ for i in range(1,6):
     print(i)
     if i==3:
         break   
+
+#Functions
+def college(a,b):
+    return a,b
+print(college("sree dattha group of instiutions","Bharath"))
+
+
+def add(a,b):
+    return a+b,a//b,a%b,a**b,a*b
+print(add(23,45))
+
+
+a=10
+def add():
+    d=100
+    return a,d
+print(add())
+
+
+a=lambda x:x**2
+print(a(44))
