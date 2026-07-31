@@ -1,3 +1,4 @@
+"""
 #fib using recursion
 n=int(input("enter your num"))
 def fibonacci(n): 
@@ -58,8 +59,24 @@ def factorial(n):
     return n*factorial(n-1)
 print(factorial(5))
 
+#first N numbers sum
 def sum(n):
     if n==1:
         return n
     return n+sum(n-1)
 print(sum(5))
+"""
+#Print numbers from 1 to N using recursion
+n=25
+def printnum(n):
+    if n==0:
+        return
+    printnum(n-1)
+    print(n,end=' ')
+printnum(n)
+
+
+
+
+
+
