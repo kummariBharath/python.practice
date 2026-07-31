@@ -50,3 +50,10 @@ print(add())
 
 a=lambda x:x**2
 print(a(44))
+
+def factorial(n):
+    fact=1
+    if n==1:
+        return 1
+    return n*factorial(n-1)
+print(factorial(5))
