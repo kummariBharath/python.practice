@@ -113,6 +113,87 @@ def is_prime_recursive(n, i=2):
 print(is_prime_recursive(7))
 print(is_prime_recursive(8))
 
+#slicing
+num2=[23,44,55,66,77]
+print(num2[0:2])
+print(num2[0:4:2])
+
+
+#sorting
+num3=[23,77,15,45]
+num3.sort()
+print(num3)
+
+
+#list comprehensions:
+#writing the code in concise in single line
+list1=[x*x for x in range(5)]
+print(list1)
+
+even=[x for x in range(10) if x%2==0]
+print(even)
+
+words=["goat","yak","rak"]
+length=[len(word) for word in words]
+print(length)
+
+#Array/list:It is linear data structure that store multiple of the same type in continugous memory locations
+#Python does not have a built in array data type
+#syntax:
+#array_name=[element1,element22...]
+
+arr=["data","inter"]
+print(arr)
+print(arr[0])
+arr[1]="happy"
+print(arr)
+
+#TRAVERSE
+#It is visiting and accessing each element of an array/list one by one
+
+arr=[1,23,44,55]
+for a in arr:
+    print(a)
+    
+arr=[23,33,445,55]
+print(len(arr))
+
+#insertion
+arr=[23,44,55,66,77]
+arr.append(99)
+arr.insert(0,33)
+print(arr)
+
+
+
+
+#Deletion
+
+#using remove
+arr1=[44,44,55,8734,7474,798278,3483]
+arr1.remove(44)
+print(arr1)
+#using pop
+arr2=[123,445,66]
+arr2.pop(0)
+print(arr2)
+#using del
+arr3=[44,55,66]
+del arr3[2]
+print(arr3)
+
+#Searching:it is process of finding whether an element in a array or not and location of podition
+#syntax: value in list_name
+#        list_name.index(value)
+
+nums=[23,44,55,66]
+a=44
+if a in nums:
+    print(nums.index(a))
+else:
+    print("NO")
+
+
 
 
 
