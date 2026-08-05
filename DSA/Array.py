@@ -43,6 +43,7 @@ ele=5
 for i in range(n-1,pos-2,-1): # i range from 3 to 0 ,i values are 3,2,1 
     arr[i+1]=arr[i]
 arr[pos-1]=ele
+print(arr)
 
        
 
