@@ -4,4 +4,8 @@ arr=[] #dynamic array
 arr=[1,34,55,99]
 for i in arr:
     print(i,end=" ")
+print()
+
+#searching using traversal
+
 
