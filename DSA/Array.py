@@ -18,7 +18,14 @@ for i in range(len(arr)):
 if found:
     print("found")
 else:
-    print("not found")        
+    print("not found")     
+
+#MOdify using traversal 
+arr=[100,200,20003,40000]
+for i in range(len(arr)):
+    arr[i]+=10000
+print("modified array:",arr)
+
 
 
 
