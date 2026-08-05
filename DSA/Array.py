@@ -11,7 +11,7 @@ arr=[1,34,55,99]
 i=0
 target=55
 found=False
-for i in arr:
+for i in range(len(arr)):
     if arr[i]==target:
         found=True
         break
