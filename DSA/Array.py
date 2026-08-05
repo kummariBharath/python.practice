@@ -6,7 +6,7 @@ for i in arr:
     print(i,end=" ")
 print()
 
-#searching using traversal
+#linear search  using traversal
 arr=[1,34,55,99]
 i=0
 target=55
