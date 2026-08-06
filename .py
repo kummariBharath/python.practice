@@ -193,6 +193,48 @@ if a in nums:
 else:
     print("NO")
 
+###string methods###
+a="bharath"
+print(a.upper())
+b="BHARATH"
+print(b.lower())
+c="infofsys"
+print(c.capitalize())
+d="placed into infofsys"
+print(d.title())# title() converts each word's first char to capital
+e=' I am into Infofsys '
+print(e.strip())#strip() removes trailing spaces
+f="I am notPlaced"
+print(f.replace("notPlaced","Placed"))
+p="bharath"
+print(p.split(","))#split() converts into list
+fruits=["grapes","apple"]
+print("-".join(fruits))#join()
+i="Aptitude"
+print(i.find("A"))#find()
+print(i.startswith("A"))#startswith()
+print(i.endswith("e"))#endswith()
+print(i.count("t"))#count()
+
+
+#power of a number using recursion
+def pow(N):
+    return N**2
+print(pow(9))
+#using loops
+def pow(c,d):
+    r=1
+    for i in range(d):
+        r=r*c
+    return r
+print(pow(10,4))
+
+#right approach for power of a number
+def pow(n,e):
+    if e==0:
+        return 1
+    return n*pow(n,e-1)
+print(pow(10,2))
 
 
 
