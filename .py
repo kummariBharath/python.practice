@@ -239,6 +239,7 @@ print(pow(10,2))
 
 s="the sky is blue"
 a=s.split(",")
+a=a[::-1]
 print(a)
 
 
