@@ -243,9 +243,7 @@ a=a[::-1]
 print(' '.join(a))
 print(a)
 """
-
-s="Let's take LeetCode contest"
+s="lets get placed"
 s=s.split()
-for i in range(len(s)):
-    s[i]=s[::-1]
-print(s)
+for i in s:
+    print(i[::-1])
