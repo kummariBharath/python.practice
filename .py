@@ -246,4 +246,6 @@ print(a)
 
 s="Let's take LeetCode contest"
 s=s.split()
+for i in range(len(s)):
+    s[i]=s[::-1]
 print(s)
