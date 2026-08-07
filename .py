@@ -236,13 +236,13 @@ def pow(n,e):
     return n*pow(n,e-1)
 print(pow(10,2))
 
-
+"""
 s="the sky is blue"
 a=s.split(" ")
 a=a[::-1]
 print(' '.join(a))
 print(a)
-"""
+
 s="lets get placed"
 k=[]
 s=s.split()
