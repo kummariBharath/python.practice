@@ -247,6 +247,5 @@ s="lets get placed"
 k=[]
 s=s.split()
 for i in s:
-    print(i[::-1])
-k.append(i)
-print(k)    
+    k.append(i[::-1])
+print(" ".join(k))      
