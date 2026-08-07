@@ -249,3 +249,8 @@ s=s.split()
 for i in s:
     k.append(i[::-1])
 print(" ".join(k))      
+
+
+arr = [1, 4, 3, 2, 6, 5]
+a=arr[::-1]
+print(a)
