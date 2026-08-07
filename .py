@@ -73,7 +73,7 @@ def printnum(n):
     printnum(n-1)
     print(n,end=' ')
 printnum(n)
-"""
+
 #another method
 n=25
 def print_numbers(i):
@@ -235,7 +235,11 @@ def pow(n,e):
         return 1
     return n*pow(n,e-1)
 print(pow(10,2))
+"""
 
-
+s="the sky is blue"
+a=s[::-1]
+a=a.split(",")
+print(a)
 
 
