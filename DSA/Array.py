@@ -45,7 +45,18 @@ for i in range(n-1,pos-2,-1): # i range from 3 to 0 ,i values are 3,2,1
 arr[pos-1]=ele
 print(arr)
 
-       
+class Solution:
+    def addStrings(self, num1: str, num2: str) -> str:
+        for i in range(len(num1)):
+            if num1[i] not in '0123456789':
+                return "Invalid input"
+        for j in range(len(num2)):
+            if num1[i] not in  '0123456789':
+                return "Invalid input" 
+
+
+
+
 
 
 
