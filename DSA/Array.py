@@ -47,10 +47,10 @@ arr[pos-1]=ele
 print(arr)
 
 """
-arr=[10,20,30,40,0]
+arr=[10,20,30,40]
 n=4
 pos=2
-for i in range(pos,n-1):
+for i in range(pos,n):
     arr[i-1]=arr[i]
 n-=1
 for i in range(n):
