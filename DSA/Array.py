@@ -47,6 +47,10 @@ arr[pos-1]=ele
 print(arr)
 
 """
+from turtle import left
+
+
+#deletion of specific element using shift elements to left
 arr=[10,20,30,40]
 n=4
 pos=2
