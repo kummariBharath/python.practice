@@ -26,7 +26,7 @@ for i in range(len(arr)):
     arr[i]+=10000
 print("modified array:",arr)
 
-#Array insertion using shift elements  to right
+#Array insertion using shift elements  to right(*Beginning)
 arr=[10,20,30,40,0]
 n=4
 for i in range(n-1,-1,-1): #start at i=4 ,i values are 3,2,1,0
