@@ -1,3 +1,4 @@
+"""
 #Array
 arr=[] #dynamic array
 #array traversal
@@ -44,6 +45,18 @@ for i in range(n-1,pos-2,-1): # i range from 3 to 0 ,i values are 3,2,1
     arr[i+1]=arr[i]
 arr[pos-1]=ele
 print(arr)
+
+"""
+arr=[10,20,30,40,0]
+n=4
+pos=2
+for i in range(pos,n-1):
+    arr[i-1]=arr[i]
+n-=1
+for i in range(n):
+    print(arr[i],end=' ')
+
+   
 
 
 
