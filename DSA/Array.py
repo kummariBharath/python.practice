@@ -50,8 +50,8 @@ print(arr)
 arr=[10,20,30,40]
 n=4
 pos=2
-for i in range(pos,n):
-    arr[i-1]=arr[i]
+for i in range(pos,n-1):
+    arr[i]=arr[i+1]
 n-=1
 for i in range(n):
     print(arr[i],end=' ')
