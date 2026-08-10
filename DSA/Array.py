@@ -56,7 +56,7 @@ for i in range(pos,n-1):
 n-=1
 for i in range(n):
     print(arr[i],end=' ')
-"""
+
  #deletion of first occurrence of specific element using remove()
 arr=list(map(int,input().split()))
 ele=int(input("enter ele to deleted"))
@@ -66,10 +66,10 @@ if ele in arr:
 print(" arr after deletion") 
 for i in range(len(arr)):
     print(arr[i],end=' ')
-
+"""
 #removing all occurances of the element using remove and copy of the arr(updating arr ,itertating over index of copy)
 arr=list(map(int,input().split()))
-ele=int('enter element to be deleted') 
+ele=int(input('enter element to be deleted')) 
 for x in arr[:]:
     if x==ele:
         arr.remove(arr)   
