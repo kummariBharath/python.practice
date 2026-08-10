@@ -61,13 +61,12 @@ for i in range(n):
 arr=list(map(int,input().split()))
 ele=int(input("enter ele to deleted"))
 n=len(arr)
-for i in range(n):
-    if ele in arr:
-        arr.remove(ele)
-print("after deletion") 
+if ele in arr:
+    arr.remove(ele)
+print(" arr after deletion") 
+for i in range(len(arr)):
+    print(arr[i],end=' ')
 
-for i in range(n):
-    print(arr[i],end="")       
 
 
  
