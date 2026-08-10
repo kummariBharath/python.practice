@@ -67,6 +67,13 @@ print(" arr after deletion")
 for i in range(len(arr)):
     print(arr[i],end=' ')
 
+#removing all occurances of the element using remove and copy of the arr(updating arr ,itertating over index of copy)
+arr=list(map(int,input().split()))
+ele=int('enter element to be deleted') 
+for x in arr[:]:
+    if x==ele:
+        arr.remove(arr)   
+
 
 
  
