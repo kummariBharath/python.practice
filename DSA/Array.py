@@ -73,8 +73,7 @@ ele=int(input('enter element to be deleted'))
 for x in arr[:]:
     if x==ele:
         arr.remove(ele)  
-for i in range(n):
-    print(arr[i],end="")         
+print(arr)   
 
 
 
