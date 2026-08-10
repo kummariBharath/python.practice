@@ -72,7 +72,7 @@ arr=list(map(int,input().split()))
 ele=int(input('enter element to be deleted')) 
 for x in arr[:]:
     if x==ele:
-        arr.remove(arr)   
+        arr.remove(ele)   
 
 
 
