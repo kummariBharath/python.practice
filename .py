@@ -267,7 +267,7 @@ def GCD(a,b):
     else:
         return a                
 print(GCD(52,10))
-
+#Get divisors of a number
 class Solution:
     def getDivisors(self, n):
         arr=[]
@@ -285,5 +285,13 @@ class Solution:
             return 
         self.printNumbers(n-1) 
         print(n)     
-print(Solution().printNumbers(5))        
+print(Solution().printNumbers(5))     
+
+#N t0 1 using recursion
+def printNumbers(n):
+    if n<=0:
+        return
+    print(n)
+    printNumbers(n-1)
+printNumbers(5)    
                 
