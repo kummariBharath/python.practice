@@ -236,7 +236,7 @@ def pow(n,e):
     return n*pow(n,e-1)
 print(pow(10,2))
 
-"""
+
 s="the sky is blue"
 a=s.split(" ")
 a=a[::-1]
@@ -254,3 +254,36 @@ print(" ".join(k))
 arr = [1, 4, 3, 2, 6, 5]
 a=arr[::-1]
 print(a)
+
+"""
+def GCD(a,b):
+    while(a>0 and b>0):
+        if a>b:
+            a=a%b
+        else:
+            b=b%a
+    if a==0:
+        return b
+    else:
+        return a                
+print(GCD(52,10))
+
+class Solution:
+    def getDivisors(self, n):
+        arr=[]
+        for i in range(1,n+1):
+            if n%i==0:
+                arr.append(i)
+                if n//i!=i:
+                    arr.append(n//i)
+        return sorted(arr) 
+print(Solution().getDivisors(12))   
+
+class Solution:
+    def printNumbers(self, n):
+        if n<=0:
+            return 
+        self.printNumbers(n-1) 
+        print(n)     
+print(Solution().printNumbers(5))        
+                
