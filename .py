@@ -294,4 +294,9 @@ def printNumbers(n):
     print(n)
     printNumbers(n-1)
 printNumbers(5)    
-                
+
+def sum(n):
+    if n<=0:
+        return 
+    return n+sum(n-1)
+print(sum(5))                
