@@ -299,4 +299,10 @@ def sum(n):
     if n<=0:
         return 0
     return n+sum(n-1)     
-print(sum(5))        
+print(sum(5))     
+
+arr = [1, 2, 3, 4, 5]
+
+arr[:] = arr[::-1]
+
+print(" ".join(map(str, arr)))
