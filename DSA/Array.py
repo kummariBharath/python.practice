@@ -66,14 +66,31 @@ if ele in arr:
 print(" arr after deletion") 
 for i in range(len(arr)):
     print(arr[i],end=' ')
-"""
+
 #removing all occurances of the element using remove and copy of the arr(updating arr ,itertating over index of copy)
+
+
+
 arr=list(map(int,input().split()))
 ele=int(input('enter element to be deleted')) 
 for x in arr[:]:
     if x==ele:
         arr.remove(ele)  
 print(arr)  
+"""
+
+def findMaxConsecutiveOnes(nums): #
+        count=0
+        maximum=0
+        for num in nums:
+            if num==1:
+                count+=1
+                maximum=max(maximum,count)
+            else:
+                count=0 #reset the count to 0 when arr[i]==0    
+        return maximum
+print(findMaxConsecutiveOnes([1,1,0,1,1,1])) #output:3
+
 
 
 

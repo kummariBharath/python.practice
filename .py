@@ -306,3 +306,8 @@ arr = [1, 2, 3, 4, 5]
 arr[:] = arr[::-1]
 
 print(" ".join(map(str, arr)))
+
+
+arr=[100,200,300]
+a=arr[::-1]
+print(a)
