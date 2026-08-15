@@ -311,3 +311,9 @@ print(" ".join(map(str, arr)))
 arr=[100,200,300]
 a=arr[::-1]
 print(a)
+
+n=[1,2,3,4,56,67,89]
+k=5
+for i in range(len(n)):
+    n[:]=n[n-k:]+n[:n-k]
+print(n)    
