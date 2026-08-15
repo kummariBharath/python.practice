@@ -314,7 +314,7 @@ print(a)
 """
 def rotate(n,k):
     for i in range(len(n)):
-        n[:]=n[len(n)-k:]+n[:len(n)-k]
+        n[i]=n[(i+k)%len(n)]
     return n
-print(rotate([1,2,3,4,5],2)) #ou
+print(rotate([1,2,3,4,5],2)) #output: [4, 5, 1, 2, 3]
 
