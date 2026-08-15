@@ -315,5 +315,5 @@ print(a)
 n=[1,2,3,4,56,67,89]
 k=5
 for i in range(len(n)):
-    n[:]=n[n-k:]+n[:n-k]
+    n[:]=n[len(n)-k:]+n[:len(n)-k]
 print(n)    
