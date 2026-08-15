@@ -316,5 +316,5 @@ def remove(n,k):
     for i in range(len(n)):
         n[:]=n[len(n)-k:]+n[:len(n)-k]
     return n
-print([1,2,3,5,6,7],3)    
+print(remove([1,2,3,5,6,7],3))    
 
