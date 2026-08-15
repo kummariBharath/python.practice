@@ -255,7 +255,7 @@ arr = [1, 4, 3, 2, 6, 5]
 a=arr[::-1]
 print(a)
 
-"""
+
 def GCD(a,b):
     while(a>0 and b>0):
         if a>b:
@@ -311,7 +311,7 @@ print(" ".join(map(str, arr)))
 arr=[100,200,300]
 a=arr[::-1]
 print(a)
-
+"""
 n=[1,2,3,4,56,67,89]
 k=5
 for i in range(len(n)):
