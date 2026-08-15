@@ -312,8 +312,9 @@ arr=[100,200,300]
 a=arr[::-1]
 print(a)
 """
-n=[1,2,3,4,56,67,89]
-k=5
-for i in range(len(n)):
-    n[:]=n[len(n)-k:]+n[:len(n)-k]
-print(n)    
+def remove(n,k):
+    for i in range(len(n)):
+        n[:]=n[len(n)-k:]+n[:len(n)-k]
+    return n
+print([1,2,3,5,6,7],3)    
+
