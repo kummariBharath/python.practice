@@ -312,9 +312,3 @@ arr=[100,200,300]
 a=arr[::-1]
 print(a)
 """
-def rotate(n,k):
-    for i in range(len(n)):
-        n[i]=n[(i+k)%len(n)]
-    return n
-print(rotate([1,2,3,4,5],2)) #output: [4, 5, 1, 2, 3]
-
