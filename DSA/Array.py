@@ -92,6 +92,36 @@ def findMaxConsecutiveOnes(nums): #
 print(findMaxConsecutiveOnes([1,1,0,1,1,1])) #output:3
 
 
+#Searching:
+#To find the elements using the searching techniques
+#1.Linear Search 2.Binary Search
+#Linear search is the simplest technique in which each element of list is checked one by one until the target ele is found
+#Time complexity: best case-O(1) Avg and worst case-O(n)
+#Space complexity:O(1)
+#Example:
+#Syntax
+def linear(arr,tar):
+    for i in range(len(arr)):
+        if arr[i]==tar:
+            return i
+    return -1
+    
+#Ex:
+def linear(arr,t):
+    result=0
+    for i in range(len(arr)):
+        if arr[i]==t:
+            return i
+    return -1
+arr=[89,55]
+t=89
+result=linear(arr,t)
+if result!=-1:
+    print("ele found at:",result)
+else:
+    print("not found")
+
+
 
 
 
