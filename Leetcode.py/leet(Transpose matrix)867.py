@@ -13,4 +13,4 @@ class Solution:
 # 2. Iterate through the original matrix and assign values to the new matrix in transposed positions.
 # 3. Time complexity is O(m*n) where m is the number of rows and n is the number of columns in the original matrix.
 # 4. The space complexity is O(m*n) because we are creating a new matrix to store the transposed values.    
-    
+      
